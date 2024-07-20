@@ -1,8 +1,8 @@
 .footer {
-    color: #000 
+    color: #000; 
   }
   
-  .footer .container img {
+  .footer img {
     width: 150px;
     margin-bottom: 20px;
   }
@@ -72,10 +72,12 @@
   }
   .footer-bottom {
     width: 100%;
-    padding-top: 20px;
+    height: 40px;
+    align-content: center;
     background-color: #2D947A;
     color: #fff;
     text-align: center; 
+    margin: 0;
   }
   
 
