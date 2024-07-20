@@ -44,7 +44,9 @@
     position: relative; 
     transition: border-bottom 0.5s ease; 
   }
-
+  .navigation ul li a:hover{
+    color: #2D947A; 
+  }
   .navigation ul li a.active {
     color: #2D947A; 
     font-weight: bold;
