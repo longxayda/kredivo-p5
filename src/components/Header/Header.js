@@ -1,8 +1,10 @@
 import React from 'react'
-
+import '../container.css'
 const Header = () => {
   return (
-    <div>Header</div>
+    <div className='container'>
+      <div>Header nè</div>
+    </div>
   )
 }
 
