@@ -9,7 +9,7 @@ import mau4 from "../../Image/Banner/Banner/mẫu 4.png";
 import mau5 from "../../Image/Banner/Banner/mẫu 5.png";
 const SliderShow = () => {
   return (
-    <div className="container mt-5">
+    <div className=" mt-5">
       <Carousel interval={750} wrap={true}>
         <Carousel.Item>
           <img
