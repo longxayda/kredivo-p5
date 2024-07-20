@@ -1,10 +1,9 @@
-// Header.js
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Header.css';
 import LogoP5 from "../../Image/Logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,22 +17,33 @@ const Header = () => {
       <div className="container">
         <div className="header-inner">
           <div className="logo">
-            <Link to="/">
+            <NavLink to="/">
               <img src={LogoP5} alt="Logo" />
-            </Link>
+            </NavLink>
           </div>
           <button className="menu-button" onClick={toggleMenu}>
             <FontAwesomeIcon icon={faBars} />
           </button>
           <nav className={`navigation ${menuOpen ? 'open' : ''}`}>
             <ul>
-              <li><Link to="/">Trang Chủ</Link></li>
-              <li><Link to="/">Về chúng tôi</Link></li>
-              <li><Link to="/">Sản phẩm</Link></li>
-              <li><Link to="/">Con người</Link></li>
-              <li><Link to="/">Liên hệ</Link></li>
+              <li>
+                <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>Trang Chủ</NavLink>
+              </li>
+              <li>
+                <NavLink to="/about-us" className={({ isActive }) => isActive ? 'active' : ''}>Về chúng tôi</NavLink>
+              </li>
+              <li>
+                <NavLink to="/product" className={({ isActive }) => isActive ? 'active' : ''}>Sản phẩm</NavLink>
+              </li>
+              <li>
+                <NavLink to="/person" className={({ isActive }) => isActive ? 'active' : ''}>Con người</NavLink>
+              </li>
+              <li>
+                <NavLink to="/contact-us" className={({ isActive }) => isActive ? 'active' : ''}>Liên hệ</NavLink>
+              </li>
             </ul>
           </nav>
+
         </div>
       </div>
     </header>
