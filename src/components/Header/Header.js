@@ -12,12 +12,16 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header className="header">
       <div className="container">
         <div className="header-inner">
           <div className="logo">
-            <NavLink to="/">
+            <NavLink to="/" onClick={closeMenu}>
               <img src={LogoP5} alt="Logo" />
             </NavLink>
           </div>
@@ -27,23 +31,22 @@ const Header = () => {
           <nav className={`navigation ${menuOpen ? 'open' : ''}`}>
             <ul>
               <li>
-                <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>Trang Chủ</NavLink>
+                <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>Trang Chủ</NavLink>
               </li>
               <li>
-                <NavLink to="/about-us" className={({ isActive }) => isActive ? 'active' : ''}>Về chúng tôi</NavLink>
+                <NavLink to="/about-us" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>Về chúng tôi</NavLink>
               </li>
               <li>
-                <NavLink to="/product" className={({ isActive }) => isActive ? 'active' : ''}>Sản phẩm</NavLink>
+                <NavLink to="/product" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>Sản phẩm</NavLink>
               </li>
               <li>
-                <NavLink to="/person" className={({ isActive }) => isActive ? 'active' : ''}>Con người</NavLink>
+                <NavLink to="/person" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>Con người</NavLink>
               </li>
               <li>
-                <NavLink to="/contact-us" className={({ isActive }) => isActive ? 'active' : ''}>Liên hệ</NavLink>
+                <NavLink to="/contact-us" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>Liên hệ</NavLink>
               </li>
             </ul>
           </nav>
-
         </div>
       </div>
     </header>
