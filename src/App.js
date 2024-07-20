@@ -11,6 +11,18 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage/>} />
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/" element={<HomePage/>} />
         </Routes>
         <Footer/>
       </div>
