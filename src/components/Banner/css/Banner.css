@@ -252,16 +252,15 @@
     margin-bottom: 12px;
   }
 }
-.banner-item-image-footer-1{
+.banner-item-image-footer-1 {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   overflow: cover;
 }
-.text-1{
+.text-1 {
   font-size: 24px;
   font-weight: bold;
-  color: #FF0000;
- 
+  color: #ff0000;
 }
