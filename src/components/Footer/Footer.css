@@ -1,0 +1,144 @@
+.footer {
+    color: #000 
+  }
+  
+  .footer .container img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: stretch;
+  }
+  
+  .main-footer > div {
+    flex: 1;
+  }
+  
+  .main-footer .left {
+    flex: 3;
+  }
+  
+  .main-footer .right {
+    flex: 1;
+    
+}
+  
+  .main-footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .main-footer div > div {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .main-footer div > div > .fa-icon {
+    margin-right: 30px; 
+    padding-top: 15px;
+  }
+  
+  .main-footer input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #2D947A; 
+    border-radius: 5px;
+  }
+  
+  .main-footer button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #2D947A; 
+    color: #fff; 
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .main-footer button:hover {
+    background-color: #2A8B67; 
+  }
+  
+  .main-footer .right .social-icons {
+    display: flex;
+    gap: 20px; 
+    color : #2D947A;
+    font-size: 25px;
+  }
+  .footer-bottom {
+    width: 100%;
+    padding-top: 20px;
+    background-color: #2D947A;
+    color: #fff;
+    text-align: center; 
+  }
+  
+
+
+@media (max-width: 768px) {
+    .main-footer {
+      flex-direction: column;
+      
+    }
+  
+    .main-footer .left, .main-footer .right {
+      flex: 1;
+      margin: 0;
+      padding: 10px 0;
+      flex-wrap: nowrap;
+    }
+  
+    .main-footer .right {
+      text-align: center;
+    }
+    .main-footer .submit{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-footer div input,
+    .main-footer div button {
+      margin: 0 auto; 
+    }
+    .main-footer div input {
+        margin-bottom: 10px;
+      }
+    
+      .main-footer div button {
+        margin-top: 10px; 
+      }
+    .main-footer .social-icons {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer .container img {
+      width: 120px; 
+    }
+  
+    .main-footer h3 {
+      font-size: 16px; 
+    }
+  
+    .main-footer input {
+      width: calc(100% - 20px); 
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .main-footer button {
+      width: 70%; 
+      margin-top: 10px;
+    }
+  
+    .main-footer .social-icons {
+      font-size: 20px; 
+      gap: 15px;
+    }
+  }
+  
