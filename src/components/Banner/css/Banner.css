@@ -1,0 +1,49 @@
+.text-banner-1-2-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.p {
+  text-align: justify; /* Hoặc text-align: left; nếu cần căn lề trái */
+}
+.images-banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 20px; /* Thêm khoảng cách giữa các hình ảnh */
+  flex-wrap: wrap; /* Cho phép các hình ảnh bọc lại */
+}
+.images-banner img {
+  max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của khối chứa */
+  height: auto; /* Giữ tỷ lệ khung hình của hình ảnh */
+  width: 200px; /* Đặt kích thước cụ thể, có thể thay đổi theo nhu cầu */
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .images-banner {
+    padding: 20px;
+  }
+
+  .images-banner img {
+    width: 150px; /* Thay đổi kích thước hình ảnh trên màn hình nhỏ hơn */
+  }
+}
+.banner-activity{
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    
+}
+.banner-activity .images-banner-activity{
+    width: 500px;
+    height: 200px;
+    overflow: cover;
+    border-radius: 10px;
+}
