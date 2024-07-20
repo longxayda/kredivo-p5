@@ -1,0 +1,16 @@
+/* SlideShowDoiTac.css */
+.logo-carousel-container {
+  padding: 20px;
+}
+
+.logo-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-image {
+  max-width: 100px; /* Điều chỉnh kích thước logo theo nhu cầu */
+  height: auto;
+  margin: 0 10px; /* Khoảng cách giữa các logo */
+}

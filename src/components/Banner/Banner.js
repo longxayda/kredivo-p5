@@ -12,7 +12,7 @@ import hai from "../../Image/Hình ảnh Lĩnh vực hoạt động/2.jpg";
 import nam from "../../Image/Hình ảnh Lĩnh vực hoạt động/5.jpg";
 import sau from "../../Image/Hình ảnh Lĩnh vực hoạt động/6.jpg";
 import bay from "../../Image/Hình ảnh Lĩnh vực hoạt động/7.jpg";
-import SlideShow_doi_tac from "./SlideShow_doi_tac";
+import SlideShowDoiTac from "./SlideShowDoiTac";
 import "../../components/container.css";
 
 const Banner = () => {
@@ -193,7 +193,7 @@ const Banner = () => {
           >
             Đối tác của chúng tôi
           </p>
-            <SlideShow_doi_tac />
+            <SlideShowDoiTac />
          
         </div>
       </div>
