@@ -1,5 +1,5 @@
 import React from "react";
-import "../container.css";
+// import "../container.css";
 import SliderShow from "./SlideShow";
 import "../Banner/css/Banner.css";
 import congnghe from "../../Image/cong_nghe.png";
