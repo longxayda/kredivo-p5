@@ -1,6 +1,19 @@
-.App {
-  text-align: center;
+.app {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000; 
+}
+
+main {
+  flex: 1; 
+  padding-top: 70px;
+  padding-bottom: 10px;
 }
 html, body {
   height: 100%;
