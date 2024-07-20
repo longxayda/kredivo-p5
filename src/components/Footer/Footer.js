@@ -10,7 +10,8 @@ import '../container.css'
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="container">
+    <div className='container'>
+      <div className="hello">
         <div>
           <img src={Logop5} alt="Logo" />
         </div>
@@ -35,10 +36,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="footer-bottom">
+       
+      </div>
+      </div>
+      <div className="footer-bottom">
           <p>Power5 © Copyright 2020, Inc. All rights reserved</p>
         </div>
-      </div>
     </footer>
   );
 }
