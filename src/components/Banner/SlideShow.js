@@ -21,7 +21,7 @@ const SliderShow = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 custom-image"
-            src={mau2}
+            src={mau4}
             alt="Second slide"
           />
         </Carousel.Item>
@@ -35,7 +35,7 @@ const SliderShow = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 custom-image"
-            src={mau4}
+            src={mau2}
             alt="Third slide"
           />
         </Carousel.Item>
