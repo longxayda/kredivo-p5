@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './Header.css';
 import LogoP5 from "../../Image/Logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,12 +16,16 @@ const Header = () => {
     setMenuOpen(false);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <header className="header">
       <div className="container">
         <div className="header-inner">
           <div className="logo">
-            <NavLink to="/" onClick={closeMenu}>
+            <NavLink to="/" onClick={() => { scrollToTop(); closeMenu(); }}>
               <img src={LogoP5} alt="Logo" />
             </NavLink>
           </div>
@@ -31,19 +35,29 @@ const Header = () => {
           <nav className={`navigation ${menuOpen ? 'open' : ''}`}>
             <ul>
               <li>
-                <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>Trang Chủ</NavLink>
+                <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''} onClick={() => { scrollToTop(); closeMenu(); }}>
+                  Trang Chủ
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/about-us" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>Về chúng tôi</NavLink>
+                <NavLink to="/about-us" className={({ isActive }) => isActive ? 'active' : ''} onClick={() => { scrollToTop(); closeMenu(); }}>
+                  Về chúng tôi
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/product" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>Sản phẩm</NavLink>
+                <NavLink to="/product" className={({ isActive }) => isActive ? 'active' : ''} onClick={() => { scrollToTop(); closeMenu(); }}>
+                  Sản phẩm
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/person" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>Con người</NavLink>
+                <NavLink to="/honor" className={({ isActive }) => isActive ? 'active' : ''} onClick={() => { scrollToTop(); closeMenu(); }}>
+                  Tôn Vinh
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/contact-us" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>Liên hệ</NavLink>
+                <NavLink to="/contact-us" className={({ isActive }) => isActive ? 'active' : ''} onClick={() => { scrollToTop(); closeMenu(); }}>
+                  Liên hệ
+                </NavLink>
               </li>
             </ul>
           </nav>
