@@ -7,8 +7,8 @@ import logo1 from "../../Image/1.png";
 
 const AboutUs = () => {
   return (
-    <main className="about-us-main container">
-      <div className="about-us-container">
+    <main className="container">
+      <div className=" about-us-main "> 
         <div className="about-us-content">
           <div className="about-us-intro">
             <h6>

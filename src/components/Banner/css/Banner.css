@@ -112,12 +112,13 @@
   gap: 16px;
 }
 
-.banner-item-left,
+
 .banner-item-right {
-  flex: 1;
+  flex: 2;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  align-items: flex-end;
+  gap: 15px;
 }
 
 .item-left-content-1,
