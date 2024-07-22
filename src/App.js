@@ -11,6 +11,8 @@ import Contact from "./components/Menu-Linked/Contact";
 import ProfileDaoXuanSon from "./components/Menu-Linked/Profile/ProfileDaoXuanSon";
 import ProfileDaoTienPhong from "./components/Menu-Linked/Profile/ProfileDaoTienPhong";
 import ProfileHangSamNang from "./components/Menu-Linked/Profile/ProfileHangSamNang";
+import ProfileHoVanLong from "./components/Menu-Linked/Profile/ProfileHoVanLong";
+import ProfileHaHuyHieu from "./components/Menu-Linked/Profile/ProfileHaHuyHieu";
 const App = () => {
   return (
     <Router>
@@ -25,6 +27,8 @@ const App = () => {
             <Route path="/ProfileDaoXuanSon" element={<ProfileDaoXuanSon />} />
             <Route path="/ProfileDaoTienPhong" element={<ProfileDaoTienPhong />} />
             <Route path="/ProfileHangSamNang" element={<ProfileHangSamNang />} />
+            <Route path="/ProfileHoVanLong" element={<ProfileHoVanLong />} />
+            <Route path="/ProfileHaHuyHieu" element={<ProfileHaHuyHieu />} />
           </Routes>
         <Footer />
       </div>
