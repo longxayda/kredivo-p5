@@ -8,7 +8,9 @@ import AboutUs from "./components/Menu-Linked/AboutUs";
 import Product from "./components/Menu-Linked/Product";
 import Honor from "./components/Menu-Linked/Honor";
 import Contact from "./components/Menu-Linked/Contact";
-
+import ProfileDaoXuanSon from "./components/Menu-Linked/Profile/ProfileDaoXuanSon";
+import ProfileDaoTienPhong from "./components/Menu-Linked/Profile/ProfileDaoTienPhong";
+import ProfileHangSamNang from "./components/Menu-Linked/Profile/ProfileHangSamNang";
 const App = () => {
   return (
     <Router>
@@ -20,6 +22,9 @@ const App = () => {
             <Route path="/product" element={<Product />} />
             <Route path="/honor" element={<Honor />} />
             <Route path="/contact-us" element={<Contact />} />
+            <Route path="/ProfileDaoXuanSon" element={<ProfileDaoXuanSon />} />
+            <Route path="/ProfileDaoTienPhong" element={<ProfileDaoTienPhong />} />
+            <Route path="/ProfileHangSamNang" element={<ProfileHangSamNang />} />
           </Routes>
         <Footer />
       </div>

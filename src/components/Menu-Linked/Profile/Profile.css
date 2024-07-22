@@ -1,0 +1,71 @@
+/* Đảm bảo container luôn đầy chiều rộng màn hình */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px; /* Thay đổi padding để thích ứng với màn hình nhỏ */
+  box-sizing: border-box;
+}
+
+/* Thiết lập cho phần header */
+.image-header img {
+  width: 100%; /* Đảm bảo hình ảnh trong header chiếm toàn bộ chiều rộng */
+  height: auto; /* Giữ tỷ lệ của hình ảnh */
+}
+
+/* Thiết lập cho các phần tử trong body */
+.body-item {
+  margin-top: 45px;
+  margin-left: 0; /* Loại bỏ margin-left để phù hợp với màn hình nhỏ */
+}
+
+/* Thiết lập cho banner */
+.banner-name {
+  background-color: #349f89;
+  color: white;
+  padding: 20px 40px; /* Giữ padding lớn trên màn hình lớn */
+  font-weight: bold;
+  font-size: 24px; /* Giữ kích thước font lớn trên màn hình lớn */
+  display: inline-block;
+  transform: skewX(-20deg);
+}
+
+.banner-content-name {
+  transform: skewX(20deg);
+}
+.profile-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Thiết lập cho phần profile */
+.body-profile-xs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Giữ layout cột cho màn hình lớn */
+  margin-left: 0px; /* Loại bỏ margin-left cho màn hình nhỏ */
+  gap: 100px;
+  padding: 20px;
+}
+
+/* Thiết lập cho profile-item-body */
+.profile-item-body {
+  display: flex;
+  flex-direction: row; /* Giữ layout cột cho màn hình lớn */
+  gap: 20px;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .body-profile-xs {
+    flex-direction: column; /* Chuyển thành cột cho màn hình nhỏ */
+  }
+  .profile-item-body {
+    flex-direction: column; /* Chuyển thành cột cho màn hình nhỏ */
+  }
+  .banner-name {
+    font-size: 18px; /* Giảm kích thước font cho màn hình nhỏ */
+    padding: 15px 20px; /* Thay đổi padding cho màn hình nhỏ */
+  }
+}
