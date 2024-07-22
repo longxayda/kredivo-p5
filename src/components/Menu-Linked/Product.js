@@ -29,8 +29,13 @@ const Product = () => {
                   kiểm tra một cách dễ dàng
                 </p>
               </div>
-              <div>
-                <div>Chi tiết</div>
+
+              <div className="parent-container">
+                <div className="chi-tiet-form">
+                  <div className="chi-tiet">
+                    <div>Chi tiết</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -55,8 +60,12 @@ const Product = () => {
                   kiểm tra một cách dễ dàng
                 </p>
               </div>
-              <div>
-                <div>Chi tiết</div>
+              <div className="parent-container">
+                <div className="chi-tiet-form">
+                  <div className="chi-tiet">
+                    <div>Chi tiết</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -81,8 +90,12 @@ const Product = () => {
                   kiểm tra một cách dễ dàng
                 </p>
               </div>
-              <div>
-                <div>Chi tiết</div>
+              <div className="parent-container">
+                <div className="chi-tiet-form">
+                  <div className="chi-tiet">
+                    <div>Chi tiết</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -111,8 +124,12 @@ const Product = () => {
                     kiểm tra một cách dễ dàng
                   </p>
                 </div>
-                <div>
-                  <div>Chi tiết</div>
+                <div className="parent-container">
+                  <div className="chi-tiet-form">
+                    <div className="chi-tiet">
+                      <div>Chi tiết</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -139,8 +156,12 @@ const Product = () => {
                     kiểm tra một cách dễ dàng
                   </p>
                 </div>
-                <div>
-                  <div>Chi tiết</div>
+                <div className="parent-container">
+                  <div className="chi-tiet-form">
+                    <div className="chi-tiet">
+                      <div>Chi tiết</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

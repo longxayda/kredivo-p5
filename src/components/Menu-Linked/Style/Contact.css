@@ -1,19 +1,32 @@
-
 .contact-main {
-   display: flex;
-   justify-content: center;
-   padding: 100px 50px 30px 50px;
-  }  
-  .contact-heading {
-    font-size: 1.5rem;
-    color: #2D947A;
-    margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 100px 50px 30px 50px;
+  animation: fadeIn 1s ease-in-out;
+}
+.contact-heading {
+  font-size: 1.5rem;
+  color: #2d947a;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  .contact-info {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 20px;
-    line-height: 1.6;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
+}
+
+/* .glowing-border-container {
+  animation: fadeIn 1s ease-in-out;
+} */
