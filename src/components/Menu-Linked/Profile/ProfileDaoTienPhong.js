@@ -20,7 +20,6 @@ const ProfileDaoTienPhong = () => {
         </div>
       </div>
       <div style={{ border: "1px solid #2D947A", marginTop: "20px" }}></div>
-
       <div className="body-profile-xs">
         <div>
           <div className="profile-item-body">
@@ -72,7 +71,7 @@ const ProfileDaoTienPhong = () => {
           </div>
         </div>
         <div>
-          <div>
+          <div className="image-container">
             <img src={image} alt="image-profile" />
           </div>
         </div>
