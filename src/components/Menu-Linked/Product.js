@@ -1,53 +1,149 @@
 import React from "react";
 import "../container.css";
 import "./Style/Product.css";
+import logo1 from "../../Image/Sản phẩm/3b852a404296b500f7d9df32a4024c4c (1).jpg";
+
 const Product = () => {
   return (
     <main>
-      <div className="container">
-        <div className="flex flex-col items-center space-y-8 p-8">
-          <div className="text-center">
-            <h2 className="text-2xl font-bold" style={{ color: "#2D947A" }}>
-              Hệ thống e-learning chuyên nghiệp
-            </h2>
-            <p className="text-muted-foreground mt-2">
-              Quản lý khóa học, học viên, tiến trình học tập, tài liệu học tập,
-              đánh giá
-              <br />
-              và kiểm tra một cách dễ dàng
-            </p>
+      <div className="Product-content">
+        <div className="product-header">
+          <div className="glowing-border-container">
+            <div className="glowing-border">
+              <img src={logo1} alt="Product" className="product-img" />
+              <div>
+                <p
+                  style={{
+                    fontWeight: "bold",
+                    color: "#2D947A",
+                    fontSize: "20px",
+                  }}
+                >
+                  Hệ thống e-learning <br /> chuyên nghiệp
+                </p>
+              </div>
+              <div>
+                <p>
+                  Quản lý khóa học, học viên, tiến trình học <br /> tập, tài
+                  liệu học tập, đánh giá và <br />
+                  kiểm tra một cách dễ dàng
+                </p>
+              </div>
+              <div>
+                <div>Chi tiết</div>
+              </div>
+            </div>
           </div>
-          <div className="text-center">
-            <h2 className="text-2xl font-bold" style={{ color: "#2D947A" }}>
-              Kinh doanh khóa học, dịch vụ tư vấn
-            </h2>
-            <p className="text-muted-foreground mt-2">
-              Hỗ trợ đầy đủ các cổng thanh toán, hệ thống quản lý mã học, hệ
-              thống
-              <br />
-              coupon, hệ thống affiliate
-            </p>
+          <div className="glowing-border-container">
+            <div className="glowing-border">
+              <img src={logo1} alt="Product" className="product-img" />
+              <div>
+                <p
+                  style={{
+                    fontWeight: "bold",
+                    color: "#2D947A",
+                    fontSize: "20px",
+                  }}
+                >
+                  Hệ thống e-learning <br /> chuyên nghiệp
+                </p>
+              </div>
+              <div>
+                <p>
+                  Quản lý khóa học, học viên, tiến trình học <br /> tập, tài
+                  liệu học tập, đánh giá và <br />
+                  kiểm tra một cách dễ dàng
+                </p>
+              </div>
+              <div>
+                <div>Chi tiết</div>
+              </div>
+            </div>
           </div>
-          <div className="text-center">
-            <h2 className="text-2xl font-bold" style={{ color: "#2D947A" }}>
-              Phát triển và cung cấp nền tảng/giải pháp công nghệ thông tin theo
-              yêu cầu
-            </h2>
-            <h3 className="text-xl font-bold mt-2" style={{ color: "#2D947A" }}>
-              Phát triển phần mềm
-            </h3>
-            <p className="text-muted-foreground mt-2">
-              Thiết kế, phát triển và triển khai các ứng dụng phần mềm
-              <br />
-              Tích hợp các ứng dụng CNTT khác nhau
-              <br />
-              Bảo trì và hỗ trợ phần mềm
-            </p>
+          <div className="glowing-border-container">
+            <div className="glowing-border">
+              <img src={logo1} alt="Product" className="product-img" />
+              <div>
+                <p
+                  style={{
+                    fontWeight: "bold",
+                    color: "#2D947A",
+                    fontSize: "20px",
+                  }}
+                >
+                  Hệ thống e-learning <br /> chuyên nghiệp
+                </p>
+              </div>
+              <div>
+                <p>
+                  Quản lý khóa học, học viên, tiến trình học <br /> tập, tài
+                  liệu học tập, đánh giá và <br />
+                  kiểm tra một cách dễ dàng
+                </p>
+              </div>
+              <div>
+                <div>Chi tiết</div>
+              </div>
+            </div>
           </div>
-          <div className="text-center">
-            <h2 className="text-2xl font-bold" style={{ color: "#2D947A" }}>
-              Dịch Vụ cho thuê IT / Helpdesk
-            </h2>
+        </div>
+
+        <div className="product-header">
+          <div>
+            <div className="glowing-border-container">
+              <div className="glowing-border">
+                <img src={logo1} alt="Product" className="product-img" />
+                <div>
+                  <p
+                    style={{
+                      fontWeight: "bold",
+                      color: "#2D947A",
+                      fontSize: "20px",
+                    }}
+                  >
+                    Hệ thống e-learning <br /> chuyên nghiệp
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    Quản lý khóa học, học viên, tiến trình học <br /> tập, tài
+                    liệu học tập, đánh giá và <br />
+                    kiểm tra một cách dễ dàng
+                  </p>
+                </div>
+                <div>
+                  <div>Chi tiết</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="glowing-border-container">
+              <div className="glowing-border">
+                <img src={logo1} alt="Product" className="product-img" />
+                <div>
+                  <p
+                    style={{
+                      fontWeight: "bold",
+                      color: "#2D947A",
+                      fontSize: "20px",
+                    }}
+                  >
+                    Hệ thống e-learning <br /> chuyên nghiệp
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    Quản lý khóa học, học viên, tiến trình học <br /> tập, tài
+                    liệu học tập, đánh giá và <br />
+                    kiểm tra một cách dễ dàng
+                  </p>
+                </div>
+                <div>
+                  <div>Chi tiết</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
