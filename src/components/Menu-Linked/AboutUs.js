@@ -54,29 +54,118 @@ const AboutUs = () => {
             </div>
             <h3>Ban lãnh đạo cấp cao</h3>
             <div>
-            <div className="leaders">
-              <div className="leader">
-                <div style={{width:'200px' , height:'200px',border:'1px solid #2D947A', borderRadius:'50%'}}><img src={logo1} alt="Leader 1" className="leader-img" /></div>
-                <p>LS Đào Xuân Sơn</p>
+              <div className="leaders">
+                <a href="/ProfileDaoXuanSon">
+                  <button
+                    style={{
+                      background: "none",
+                      border: "none",
+                      cursor: "pointer",
+                      padding: 0,
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: "200px",
+                        height: "200px",
+                        border: "1px solid #2D947A",
+                        borderRadius: "50%",
+                      }}
+                    >
+                      <img src={logo1} alt="Leader 1" className="leader-img" />
+                    </div>
+                    <p>LS Đào Xuân Sơn</p>
+                  </button>
+                </a>
+
+                <div className="leader">
+                  <a href="/ProfileDaoTienPhong">
+                    <button
+                      style={{
+                        background: "none",
+                        border: "none",
+                        cursor: "pointer",
+                        padding: 0,
+                      }}
+                    >
+                      <div
+                        style={{
+                          width: "200px",
+                          height: "200px",
+                          border: "1px solid #2D947A",
+                          borderRadius: "50%",
+                        }}
+                      >
+                        <img
+                          src={logo1}
+                          alt="Leader 1"
+                          className="leader-img"
+                        />
+                      </div>
+                      <p>LS Đào Tiến Phong</p>
+                    </button>
+                  </a>
+                </div>
               </div>
-              <div className="leader">
-                  <div style={{width:'200px' , height:'200px',border:'1px solid #2D947A', borderRadius:'50%'}}><img src={logo1} alt="Leader 1" className="leader-img" /></div>
-                <p>LS Đào Tiến Phong</p>
+              <div className="leaders1">
+                <div className="leader">
+                  <a href="/ProfileHangSamNang">
+                    <button
+                      style={{
+                        background: "none",
+                        border: "none",
+                        cursor: "pointer",
+                        padding: 0,
+                      }}
+                    >
+                      <div
+                        style={{
+                          width: "200px",
+                          height: "200px",
+                          border: "1px solid #2D947A",
+                          borderRadius: "50%",
+                        }}
+                      >
+                        <img
+                          src={logo1}
+                          alt="Leader 1"
+                          className="leader-img"
+                        />
+                      </div>{" "}
+                      <p>TS Hàng Sấm Nang</p>
+                    </button>
+                  </a>
+                </div>
+                <div className="leader">
+                  <div
+                    style={{
+                      width: "200px",
+                      height: "200px",
+                      border: "1px solid #2D947A",
+                      borderRadius: "50%",
+                    }}
+                  >
+                    <img src={logo1} alt="Leader 1" className="leader-img" />
+                  </div>{" "}
+                  <p>Ông Hồ Vân Long</p>
+                </div>
+                <div className="leader">
+                  <div
+                    style={{
+                      width: "200px",
+                      height: "200px",
+                      border: "1px solid #2D947A",
+                      borderRadius: "50%",
+                    }}
+                  >
+                    <img src={logo1} alt="Leader 1" className="leader-img" />
+                  </div>
+                  <span style={{ color: "green" }}>
+                    Kỹ sư công nghệ thông tin
+                  </span>
+                  <p>Hà Huy Hiệu</p>
+                </div>
               </div>
-            </div>
-            <div className="leaders1">
-              <div className="leader">
-              <div style={{width:'200px' , height:'200px',border:'1px solid #2D947A', borderRadius:'50%'}}><img src={logo1} alt="Leader 1" className="leader-img" /></div>                <p>TS Hàng Sấm Nang</p>
-              </div>
-              <div className="leader">
-              <div style={{width:'200px' , height:'200px',border:'1px solid #2D947A', borderRadius:'50%'}}><img src={logo1} alt="Leader 1" className="leader-img" /></div>                <p>Ông Hồ Vân Long</p>
-              </div>
-              <div className="leader">
-              <div style={{width:'200px' , height:'200px',border:'1px solid #2D947A', borderRadius:'50%'}}><img src={logo1} alt="Leader 1" className="leader-img" /></div>                
-              <span style={{color:'green'}}>Kỹ sư công nghệ thông tin</span>
-              <p>Hà Huy Hiệu</p>
-              </div>
-            </div>
             </div>
           </div>
         </div>
