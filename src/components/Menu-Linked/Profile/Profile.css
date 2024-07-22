@@ -69,3 +69,7 @@
     padding: 15px 20px; /* Thay đổi padding cho màn hình nhỏ */
   }
 }
+.image-container img {
+  max-width: 100%; /* Đảm bảo hình ảnh không bị tràn ra ngoài */
+  height: auto; /* Giữ tỷ lệ của hình ảnh */
+}
