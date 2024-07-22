@@ -137,33 +137,63 @@ const AboutUs = () => {
                   </a>
                 </div>
                 <div className="leader">
-                  <div
-                    style={{
-                      width: "200px",
-                      height: "200px",
-                      border: "1px solid #2D947A",
-                      borderRadius: "50%",
-                    }}
-                  >
-                    <img src={logo1} alt="Leader 1" className="leader-img" />
-                  </div>{" "}
-                  <p>Ông Hồ Vân Long</p>
+                  <a href="/ProfileHoVanLong">
+                    <button
+                      style={{
+                        background: "none",
+                        border: "none",
+                        cursor: "pointer",
+                        padding: 0,
+                      }}
+                    >
+                      <div
+                        style={{
+                          width: "200px",
+                          height: "200px",
+                          border: "1px solid #2D947A",
+                          borderRadius: "50%",
+                        }}
+                      >
+                        <img
+                          src={logo1}
+                          alt="Leader 1"
+                          className="leader-img"
+                        />
+                      </div>{" "}
+                      <p>Ông Hồ Vân Long</p>
+                    </button>
+                  </a>
                 </div>
                 <div className="leader">
-                  <div
-                    style={{
-                      width: "200px",
-                      height: "200px",
-                      border: "1px solid #2D947A",
-                      borderRadius: "50%",
-                    }}
-                  >
-                    <img src={logo1} alt="Leader 1" className="leader-img" />
-                  </div>
-                  <span style={{ color: "green" }}>
-                    Kỹ sư công nghệ thông tin
-                  </span>
-                  <p>Hà Huy Hiệu</p>
+                  <a href="/ProfileHaHuyHieu">
+                    <button
+                      style={{
+                        background: "none",
+                        border: "none",
+                        cursor: "pointer",
+                        padding: 0,
+                      }}
+                    >
+                      <div
+                        style={{
+                          width: "200px",
+                          height: "200px",
+                          border: "1px solid #2D947A",
+                          borderRadius: "50%",
+                        }}
+                      >
+                        <img
+                          src={logo1}
+                          alt="Leader 1"
+                          className="leader-img"
+                        />
+                      </div>
+                      <span style={{ color: "green" }}>
+                        Kỹ sư công nghệ thông tin
+                      </span>
+                      <p>Hà Huy Hiệu</p>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
