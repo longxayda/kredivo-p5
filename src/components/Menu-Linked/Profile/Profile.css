@@ -33,17 +33,12 @@
 .banner-content-name {
   transform: skewX(20deg);
 }
-.profile-item-content {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
 
 /* Thiết lập cho phần profile */
 .body-profile-xs {
   display: flex;
   flex-direction: row;
-  justify-content: center; /* Giữ layout cột cho màn hình lớn */
+  justify-content: center; /* Giữ layout hàng cho màn hình lớn */
   margin-left: 0px; /* Loại bỏ margin-left cho màn hình nhỏ */
   gap: 100px;
   padding: 20px;
@@ -52,7 +47,7 @@
 /* Thiết lập cho profile-item-body */
 .profile-item-body {
   display: flex;
-  flex-direction: row; /* Giữ layout cột cho màn hình lớn */
+  flex-direction: row; /* Giữ layout hàng cho màn hình lớn */
   gap: 20px;
 }
 
@@ -60,6 +55,7 @@
 @media (max-width: 768px) {
   .body-profile-xs {
     flex-direction: column; /* Chuyển thành cột cho màn hình nhỏ */
+    gap: 20px; /* Giảm khoảng cách giữa các phần tử */
   }
   .profile-item-body {
     flex-direction: column; /* Chuyển thành cột cho màn hình nhỏ */
@@ -68,7 +64,17 @@
     font-size: 18px; /* Giảm kích thước font cho màn hình nhỏ */
     padding: 15px 20px; /* Thay đổi padding cho màn hình nhỏ */
   }
+  .body-item {
+    margin-top: 20px; /* Giảm khoảng cách trên cho màn hình nhỏ */
+  }
+  .image-header img,
+  .body-profile-xs img {
+    max-width: 100%;
+    height: auto; /* Đảm bảo hình ảnh giữ tỷ lệ khi màn hình nhỏ */
+  }
 }
+
+/* Thiết lập cho phần hình ảnh trong body-profile-xs */
 .image-container img {
   max-width: 100%; /* Đảm bảo hình ảnh không bị tràn ra ngoài */
   height: auto; /* Giữ tỷ lệ của hình ảnh */
