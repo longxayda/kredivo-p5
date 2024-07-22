@@ -13,12 +13,12 @@
 .map-container{
   flex: 2;
 }
-h3{
-  color: #2d947a;
-}
+
 .contact-heading {
   font-size: 1.5em;
   margin: 10px 0;
+    color: #2d947a;
+  
 }
 
 .contact-info {
