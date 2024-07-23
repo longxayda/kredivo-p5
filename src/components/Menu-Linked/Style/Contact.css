@@ -11,13 +11,13 @@
   align-content: center;
 }
 .map-container{
-  flex: 2;
+  flex: 2;  
 }
 
 .contact-heading {
   font-size: 1.5em;
   margin: 10px 0;
-    color: #2d947a;
+  color: #2d947a;
   
 }
 

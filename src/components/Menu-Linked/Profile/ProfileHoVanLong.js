@@ -15,7 +15,7 @@ const ProfileHoVanLong = () => {
           <div class="banner-content-name">
             GIẢNG VIÊN - LUẬT SƯ
             <br />
-            Hàng Sấm Nang
+            HỒ VĂN LONG
           </div>
         </div>
       </div>
