@@ -11,19 +11,7 @@ import HVL from "../../Image/profile/HoVanLong.png";
 import HSN from "../../Image/profile/HangSamNang.png";
 const AboutUs = () => {
   return (
-    <main className="container">
-      <div className=" about-us-main ">
         <div className="about-us-content">
-          <div className="about-us-intro">
-            <h6>
-              Hành trình khởi đầu của Power5 Technology trước hết là một công ty
-              phát triển công nghệ trong lĩnh vực giáo dục (chuyển đổi số dự án
-              an toàn học đường, nền tảng LMS Power5.edu.vn). Với những thành
-              công đạt được, Power5 tiếp tục mở rộng sang các lĩnh vực công nghệ
-              trọng yếu như Blockchain và AI, đồng thời tham gia vào tiến trình
-              chuyển đổi số của doanh nghiệp.
-            </h6>
-          </div>
           <div className="about-us-milestones">
             <h3>Cột mốc chính</h3>
             <div className="milestone">
@@ -256,8 +244,6 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-      </div>
-    </main>
   );
 };
 
