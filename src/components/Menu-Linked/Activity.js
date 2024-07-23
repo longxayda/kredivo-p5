@@ -23,7 +23,7 @@ const Activity = () => {
     <main className="container page-activity">
       <div className="menu">
         <div className="menu-toggle" onClick={toggleMenu}>
-        <span>Các lĩnh vực hoạt động</span>
+          <span>Các lĩnh vực hoạt động</span>
           <span>{menuOpen ? '✖' : '☰'}</span>
         </div>
         <ul className={menuOpen ? 'show' : ''}>
