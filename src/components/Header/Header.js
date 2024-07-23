@@ -40,8 +40,8 @@ const Header = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about-us" className={({ isActive }) => isActive ? 'active' : ''} onClick={() => { scrollToTop(); closeMenu(); }}>
-                  Về chúng tôi
+                <NavLink to="/activity" className={({ isActive }) => isActive ? 'active' : ''} onClick={() => { scrollToTop(); closeMenu(); }}>
+                  Lĩnh vực hoạt động
                 </NavLink>
               </li>
               <li>
