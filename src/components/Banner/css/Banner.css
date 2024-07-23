@@ -20,7 +20,7 @@
 .images-banner img {
   max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của khối chứa */
   height: auto; /* Giữ tỷ lệ khung hình của hình ảnh */
-  width: 200px; /* Đặt kích thước cụ thể, có thể thay đổi theo nhu cầu */
+  width: 255px; /* Đặt kích thước cụ thể, có thể thay đổi theo nhu cầu */
 }
 
 /* Responsive Breakpoints */
@@ -111,7 +111,6 @@
   flex-wrap: wrap;
   gap: 16px;
 }
-
 
 .banner-item-right {
   flex: 2;
@@ -279,4 +278,3 @@
 /* .glowing-border-container {
     animation: fadeIn 1s ease-in-out;
   } */
-
