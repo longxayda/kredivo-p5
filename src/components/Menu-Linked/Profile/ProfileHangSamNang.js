@@ -15,7 +15,7 @@ const ProfileHangSamNang = () => {
           <div class="banner-content-name">
             GIẢNG VIÊN - LUẬT SƯ
             <br />
-            Hàng Sấm Nang
+            HÀNG SẤM NANG
           </div>
         </div>
       </div>
