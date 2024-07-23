@@ -1,3 +1,4 @@
+/* Main container for the About Us section */
 .about-us-main {
   display: flex;
   justify-content: center;
@@ -6,6 +7,7 @@
   min-height: 100vh;
   animation: fadeIn 1s ease-in-out;
 }
+
 .about-us-content {
   display: flex;
   flex-direction: column;
@@ -14,6 +16,7 @@
   gap: 50px;
 }
 
+/* Introduction text styling */
 .about-us-intro h6 {
   font-size: 1.1rem;
   line-height: 1.6;
@@ -22,6 +25,7 @@
   text-align: center;
 }
 
+/* Milestones section styling */
 .about-us-milestones {
   margin-top: 20px;
   text-align: center;
@@ -37,6 +41,7 @@
   font-size: 32px;
 }
 
+/* Individual milestone styling */
 .milestone {
   display: flex;
   align-items: center;
@@ -52,13 +57,15 @@
   color: #2d947a;
   margin-right: 10px;
 }
+
 .milestone-year > p {
   padding-top: 10px;
   align-content: center;
   align-items: center;
 }
+
 .milestone-year .fa-star {
-  margin-right: 10;
+  margin-right: 10px;
   align-items: center;
 }
 
@@ -73,12 +80,14 @@
   grid-template-columns: repeat(2, 1fr);
   margin-top: 20px;
 }
+
 .leaders1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-top: 20px;
 }
+
 .leader {
   text-align: center;
   align-items: center;
@@ -103,10 +112,9 @@
   font-weight: 600;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
-  .about-us-container {
-    padding: 15px;
+  .about-us-main {
+    padding: 50px 15px;
   }
 
   .about-us-intro h6,
@@ -122,17 +130,45 @@
     font-size: 1.3rem;
   }
 
-  .leaders {
-    grid-template-columns: 1fr;
-  }
+  .leaders,
   .leaders1 {
     grid-template-columns: 1fr;
   }
+
   .leader-img {
-    width: 80px;
-    height: 80px;
+    width: 200px; 
+    height: 200px;
   }
 }
+
+@media (max-width: 480px) {
+  .about-us-main {
+    padding: 30px 10px; 
+  }
+
+  .about-us-intro h6,
+  .milestone-description {
+    font-size: 0.9rem;
+  }
+
+  .milestone-year {
+    font-size: 0.9rem;
+  }
+
+  .about-us-milestones h3 {
+    font-size: 1.2rem;
+  }
+
+  .leader-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .leader p {
+    font-size: 0.9rem;
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -143,7 +179,3 @@
     transform: translateY(0);
   }
 }
-
-/* .glowing-border-container {
-    animation: fadeIn 1s ease-in-out;
-  } */
