@@ -27,12 +27,18 @@ const Banner = () => {
             >
               Power5 Technology
             </h1>
-            <blockquote>
+            <blockquote
+              style={{
+                color: "red",
+                fontSize: "32px",
+                fontWeight: "bold",
+              }}
+            >
               “Nơi công nghệ kết nối sức mạnh và giá trị nhân văn”
             </blockquote>
             <h2
               style={{
-                color: "red",
+                color: "#2D947A",
                 fontSize: "32px",
                 fontWeight: "bold",
               }}
@@ -132,10 +138,11 @@ const Banner = () => {
           <p className="mt-4">
             Hành trình khởi đầu của Power5 Technology trước hết là một công ty
             phát triển công nghệ trong lĩnh vực giáo dục (chuyển đổi số dự án an
-            <br /> toàn học đường, nền tảng LMS Power5.edu.vn). Với những thành công
-            đạt được, Power5 tiếp tục mở rộng sang các lĩnh vực công nghệ trọng
-            yếu<br /> như Blockchain và AI, đồng thời tham gia vào tiến trình chuyển
-            đổi số của doanh nghiệp.
+            <br /> toàn học đường, nền tảng LMS Power5.edu.vn). Với những thành
+            công đạt được, Power5 tiếp tục mở rộng sang các lĩnh vực công nghệ
+            trọng yếu
+            <br /> như Blockchain và AI, đồng thời tham gia vào tiến trình
+            chuyển đổi số của doanh nghiệp.
           </p>
         </div>
 
