@@ -16,7 +16,7 @@ const Activity = () => {
 
   const scrollToSection = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'center' });
-    setMenuOpen(false); // Close menu on section click
+    setMenuOpen(false); 
   };
 
   return (
