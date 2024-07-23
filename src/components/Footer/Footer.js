@@ -17,10 +17,11 @@ const Footer = () => {
         </div>
         <div className="main-footer">
           <div className="left">
-           
-            <div><FontAwesomeIcon icon={faLocationDot} className="fa-icon" />VP02: Số 7A-9 Đường số 12, Khu phố 6, P.Bình Chiểu, Thủ Đức, Tp.Hồ Chí Minh</div>
-            <div><FontAwesomeIcon icon={faPhone} className="fa-icon" /> (+84) 907 303 646</div>
-            <div><FontAwesomeIcon icon={faEnvelope} className="fa-icon" /> service@power5.edu.vn</div>
+            <div><FontAwesomeIcon icon={faLocationDot} className="fa-icon" />
+              <span> VP02: Số 9 Đường số 12, Khu phố 6, P.Bình Chiểu, Thủ Đức, Tp.Hồ Chí Minh</span>
+            </div>
+            <div><FontAwesomeIcon icon={faPhone} className="fa-icon" />(+84) 907 303 646</div>
+            <div><FontAwesomeIcon icon={faEnvelope} className="fa-icon" />service@power5.edu.vn</div>
           </div>
           <div className="right">
             <h3>NEWSLETTER:</h3>
