@@ -14,7 +14,10 @@ const Product = () => {
           <div className="product-header">
             <div className="glowing-border-container">
               <div className="glowing-border">
-                <img src={logo1} alt="Product" className="product-img" />
+                <div className="product-img-boder">
+                  <img src={logo1} alt="Product" className="product-img" />
+                </div>
+
                 <div>
                   <p
                     style={{
@@ -33,7 +36,6 @@ const Product = () => {
                     kiểm tra một cách dễ dàng
                   </p>
                 </div>
-
                 <div className="parent-container">
                   <div className="chi-tiet-form">
                     <div className="chi-tiet">
@@ -45,7 +47,10 @@ const Product = () => {
             </div>
             <div className="glowing-border-container">
               <div className="glowing-border">
-                <img src={logo2} alt="Product" className="product-img" />
+                <div className="product-img-boder">
+                  <img src={logo2} alt="Product" className="product-img" />
+                </div>
+
                 <div>
                   <p
                     style={{
@@ -77,7 +82,9 @@ const Product = () => {
             </div>
             <div className="glowing-border-container">
               <div className="glowing-border">
-                <img src={logo3} alt="Product" className="product-img" />
+                <div className="product-img-boder">
+                  <img src={logo3} alt="Product" className="product-img" />
+                </div>
                 <div>
                   <p
                     style={{
@@ -111,7 +118,10 @@ const Product = () => {
             <div>
               <div className="glowing-border-container">
                 <div className="glowing-border">
-                  <img src={logo4} alt="Product" className="product-img" />
+                  <div className="product-img-boder">
+                    <img src={logo4} alt="Product" className="product-img" />
+                  </div>
+
                   <div>
                     <p
                       style={{
@@ -143,7 +153,10 @@ const Product = () => {
             <div>
               <div className="glowing-border-container">
                 <div className="glowing-border">
-                  <img src={logo5} alt="Product" className="product-img" />
+                  <div className="product-img-boder">
+                    <img src={logo5} alt="Product" className="product-img" />
+                  </div>
+
                   <div>
                     <p
                       style={{

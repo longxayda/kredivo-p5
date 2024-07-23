@@ -17,17 +17,23 @@
   border-radius: 30px;
   box-shadow: 0 0 20px rgba(99, 219, 139, 0.8);
   transition: box-shadow 0.3s ease-in-out;
-  overflow: contain;
+  overflow: hidden;
+  text-align: center;
   /* width: 335px;
   height: 478px; */
+}
+.product-img-boder{
+  border: 1px solid #2d947a;
+  border-radius: 30px;
+  margin: 6px 8px 8px 8px;
 }
 
 .parent-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   height: 100%;
-  align-items: flex-end;
+  align-items: center;
 }
 
 /* .chi-tiet-form */
@@ -41,6 +47,9 @@
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .chi-tiet {
