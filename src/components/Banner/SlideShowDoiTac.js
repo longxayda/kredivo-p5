@@ -5,20 +5,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./css/SlideShowDoiTac.css"; // Đường dẫn đến tệp CSS tùy chỉnh của bạn
 
-import doitac0 from "../../Image/Logo đối tác/trusted-by-0.png";
-import doitac1 from "../../Image/Logo đối tác/1.png";
-import doitac2 from "../../Image/Logo đối tác/2.png";
-import doitac3 from "../../Image/Logo đối tác/3.png";
-import doitac4 from "../../Image/Logo đối tác/4.png";
-import doitac5 from "../../Image/Logo đối tác/5.png";
+import doitac1 from "../../Image/Logo đối tác/admas.png";
+import doitac2 from "../../Image/Logo đối tác/iny.png";
+import doitac3 from "../../Image/Logo đối tác/jlf.png";
+import doitac4 from "../../Image/Logo đối tác/vta.png";
 
 const logos = [
-  { src: doitac0, alt: "Logo 1" },
-  { src: doitac1, alt: "Logo 2" },
-  { src: doitac2, alt: "Logo 3" },
-  { src: doitac3, alt: "Logo 4" },
-  { src: doitac4, alt: "Logo 5" },
-  { src: doitac5, alt: "Logo 6" },
+  { src: doitac1, alt: "Logo 1" },
+  { src: doitac2, alt: "Logo 2" },
+  { src: doitac3, alt: "Logo 3" },
+  { src: doitac4, alt: "Logo 4" },
   // Thêm các logo khác vào đây
 ];
 
@@ -26,8 +22,8 @@ const SlideShowDoiTac = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 2000,
-    slidesToShow: 5,
+    speed: 6000,
+    slidesToShow: 4 /* Điều chỉnh số lượng slides hiển thị cùng lúc */,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,
@@ -37,21 +33,21 @@ const SlideShowDoiTac = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3 /* Điều chỉnh số lượng slides hiển thị cùng lúc */,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2 /* Điều chỉnh số lượng slides hiển thị cùng lúc */,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1 /* Điều chỉnh số lượng slides hiển thị cùng lúc */,
           slidesToScroll: 1,
         },
       },
@@ -63,7 +59,7 @@ const SlideShowDoiTac = () => {
       <Slider {...settings}>
         {logos.map((logo, index) => (
           <div key={index} className="logo-slide">
-            <img src={logo.src} alt={logo.alt} className="logo-image" />
+            <img src={logo.src} alt={logo.alt} className="logo-image" style={{ maxWidth: "282px", height: "128px" }} />
           </div>
         ))}
       </Slider>
