@@ -46,7 +46,7 @@ const Header = () => {
               </li>
               <li>
                 <NavLink to="/product" className={({ isActive }) => isActive ? 'active' : ''} onClick={() => { scrollToTop(); closeMenu(); }}>
-                  Sản phẩm
+                  Dịch vụ
                 </NavLink>
               </li>
               <li>
