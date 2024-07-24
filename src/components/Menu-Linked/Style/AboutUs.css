@@ -78,7 +78,7 @@
 .leaders {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 70px;
 }
 
 .leader {
@@ -99,8 +99,6 @@
 
 .leader p {
   text-align: center;
-  margin-top: 10px;
-  font-size: 1rem;
   color: red;
   font-weight: 600;
 }
@@ -182,7 +180,7 @@
 .leaders-advisors {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 70px;
 }
 .leaders-advisors p {
   color: red;

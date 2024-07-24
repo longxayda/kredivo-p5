@@ -38,7 +38,7 @@ const AboutUs = () => {
               <span style={{ color: "#2D947A", fontWeight: "700" }}>
                 Tổng Giám đốc
               </span>
-              <p style={{ color: "red", fontWeight: "500" }}>
+              <p style={{ color: "red", fontWeight: "600" }}>
                 Ông Phạm Ngọc Thạch
               </p>
             </button>
@@ -52,7 +52,7 @@ const AboutUs = () => {
                 alignContent: "center",
                 alignItems: "center",
               }}
-              to={"/ProfileDaoTienPhong"}
+              to={"/ProfileNguyenVanThua"}
             >
               <div
                 style={{
@@ -66,8 +66,8 @@ const AboutUs = () => {
               >
                 <img src={NVT} alt="Leader 1" className="leader-img" />
               </div>
-              <span style={{ color: "#2D947A", fontWeight: "700" }}>
-                Phó Tổng Giám đốc - Phụ trách kỹ thuật
+              <span style={{ color: "#2D947A", fontWeight: "600" }}>
+                Phó Tổng Giám đốc
               </span>
               <p>Ông Nguyễn Văn Thừa</p>
             </Link>
@@ -94,7 +94,7 @@ const AboutUs = () => {
               >
                 <img src={DXS} alt="Advisor 1" className="leader-img" />
               </div>
-              <p style={{ color: "red", fontWeight: "500" }}>LS Đào Xuân Sơn</p>
+              <p style={{ color: "red", fontWeight: "600" }}>LS Đào Xuân Sơn</p>
             </button>
           </Link>
           <Link to="/ProfileDaoTienPhong">

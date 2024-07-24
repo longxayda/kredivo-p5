@@ -68,14 +68,15 @@
   color: #333;
   justify-content: center;
   align-items: flex-start;
-  max-width: 1000px;
+  max-width: 510px;
   margin-bottom: 30px;
 }
 
 .section-title {
   color: #2d947a;
-  font-size: 32px;
-  max-width: 1070px;
+  font-size: 28px;
+  text-align: start;
+  max-width: 1000px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -85,14 +86,14 @@
   flex-direction: row;
   font-size: 16px;
   color: #333;
-  max-width: 1030px;
-  text-align: center;
+  max-width: 500px;
+  text-align: start;
   margin-bottom: 20px;
 }
 .section-body-conent {
   display: flex;
   flex-direction: row;
-  align-items: start;
+justify-content: space-evenly;
   gap: 20px;
 }
 
