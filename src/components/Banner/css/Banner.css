@@ -356,7 +356,8 @@
   }
 
   .images-banner img {
-    max-width: 100%;
+    object-fit: contain;
+    width: 250px;
   }
 
   .item-left-image-1 img,
@@ -464,8 +465,8 @@
   }
 
   .text-center img {
-    max-width: 100%;
-    height: auto;
+    max-width: 300px;
+    object-fit: contain;
   }
 }
 
@@ -497,8 +498,9 @@
   }
 
   .images-banner img {
-    width: 100%;
-    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    object-fit: contain
   }
 
   .banner-item-right {
