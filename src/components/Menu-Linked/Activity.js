@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../container.css";
 import "./Style/Activity.css";
+import { Link } from "react-router-dom";
 import mot from "../../Image/Hình ảnh Lĩnh vực hoạt động/1.jpg";
 import hai from "../../Image/Hình ảnh Lĩnh vực hoạt động/2.jpg";
 import nam from "../../Image/Hình ảnh Lĩnh vực hoạt động/4.jpg";
@@ -94,7 +95,7 @@ const Activity = () => {
             <p className="text-1">Cung cấp các dịch vụ công nghệ</p>
             <p>
               Chúng tôi cũng cung cấp các dịch vụ công nghệ theo yêu cầu của
-              khách hàng, <a href="/product">...xem thêm</a>
+              khách hàng, <Link to="/product">...xem thêm</Link>
             </p>
           </div>
           <div className="item-image">
