@@ -51,7 +51,7 @@ const Header = () => {
               </li>
               <li>
                 <NavLink to="/honor" className={({ isActive }) => isActive ? 'active' : ''} onClick={() => { scrollToTop(); closeMenu(); }}>
-                  Tôn Vinh
+                  Sự kiện
                 </NavLink>
               </li>
               <li>

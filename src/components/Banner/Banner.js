@@ -147,22 +147,6 @@ const Banner = () => {
         </div>
 
         <div className="text-center">
-          <h2
-            className="text-2xl font-bold"
-            style={{
-              color: "#2D947A",
-              fontSize: "32px",
-              fontWeight: "bold",
-            }}
-          >
-            Tầm nhìn
-          </h2>
-          <p className="mt-4">
-            Power5 Technology hướng đến mục tiêu trở thành một hệ sinh thái đầu
-            tư và công nghệ đột phá, đây cũng là nơi hội tụ những tinh anh trong
-            lĩnh vực công nghệ, cùng nhau kiến tạo những giải pháp sáng tạo,
-            mang đến những giá trị thiết thực cho cộng đồng.
-          </p>
         </div>
 
         <AboutUs />
