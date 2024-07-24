@@ -76,16 +76,9 @@
 }
 
 .leaders {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 20px;
-}
-
-.leaders1 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 .leader {
@@ -111,7 +104,24 @@
   color: red;
   font-weight: 600;
 }
+@media (max-width: 1200px) {
+  .leaders-advisors, .leaders {
+    gap: 15px;
+  }
 
+  .leader-img-container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .leader-title {
+    font-size: 14px;
+  }
+
+  .leader-name {
+    font-size: 12px;
+  }
+}
 @media (max-width: 768px) {
   .about-us-main {
     padding: 50px 15px;
@@ -130,9 +140,10 @@
     font-size: 1.3rem;
   }
 
-  .leaders,
-  .leaders1 {
-    grid-template-columns: 1fr;
+  .leaders-advisors, .leaders {
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .leader-img {
@@ -168,7 +179,20 @@
     font-size: 0.9rem;
   }
 }
-
+.leaders-advisors {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.leaders-advisors p {
+  color: red;
+  font-weight: 600;
+}
+.leader-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;

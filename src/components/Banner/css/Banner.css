@@ -1,26 +1,113 @@
-.text-banner-1-2-3 {
+.main-title {
+  color: #2d947a;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.main-quote {
+  color: red;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.sub-title {
+  color: #2d947a;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.sub-description {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  color: #2d947a;
+  font-size: 32px;
+  max-width: 1050px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  font-size: 16px;
+  color: #333;
+  max-width: 1030px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.custom-text-banner {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-right: 12px;
+  padding: 40px;
+  background-color: #f0f8f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.p {
-  text-align: justify; /* Hoặc text-align: left; nếu cần căn lề trái */
+
+.custom-text-banner h2 {
+  color: #2d947a;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
+
+.custom-text-banner .section-description {
+  text-align: justify;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.custom-text-banner p {
+  text-transform: none;
+  letter-spacing: normal;
+ 
+}
+
+.flex-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.flex-text {
+  max-width: 200px;
+  margin-left: 20px;
+}
+
+.intro-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
 .images-banner {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 40px;
-  gap: 20px; /* Thêm khoảng cách giữa các hình ảnh */
-  flex-wrap: wrap; /* Cho phép các hình ảnh bọc lại */
+  gap: 20px;
+  flex-wrap: wrap;
 }
+
 .images-banner img {
-  max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của khối chứa */
-  height: auto; /* Giữ tỷ lệ khung hình của hình ảnh */
-  width: 255px; /* Đặt kích thước cụ thể, có thể thay đổi theo nhu cầu */
+  max-width: 100%;
+  height: auto;
+  width: 255px;
 }
 
 /* Responsive Breakpoints */
@@ -30,12 +117,30 @@
   }
 
   .images-banner img {
-    width: 150px; /* Thay đổi kích thước hình ảnh trên màn hình nhỏ hơn */
+    width: 150px;
+  }
+
+  .custom-text-banner {
+    padding: 20px;
+  }
+
+  .custom-text-banner .section-description {
+    font-size: 14px;
+  }
+
+  .flex-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-text {
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
 
 .img-activity {
-  /* border: 1px solid #000; */
   width: 500px;
   height: 242px;
   border-radius: 35px;
@@ -82,6 +187,10 @@
 
 .text-center {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-2xl {
@@ -252,6 +361,7 @@
     margin-bottom: 12px;
   }
 }
+
 .banner-item-image-footer-1 {
   display: flex;
   flex-direction: row;
@@ -259,11 +369,13 @@
   justify-content: center;
   overflow: cover;
 }
+
 .text-1 {
   font-size: 24px;
   font-weight: bold;
   color: #ff0000;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -274,7 +386,3 @@
     transform: translateY(0);
   }
 }
-
-/* .glowing-border-container {
-    animation: fadeIn 1s ease-in-out;
-  } */
