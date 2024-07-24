@@ -38,7 +38,7 @@ const AboutUs = () => {
               <span style={{ color: "#2D947A", fontWeight: "700" }}>
                 Tổng Giám đốc
               </span>
-              <p style={{ color: "red", fontWeight: "500" }}>Ông Phạm Ngọc Thạch</p>
+              <p style={{ color: "red", fontWeight: "600" }}>Ông Phạm Ngọc Thạch</p>
             </button>
           </a>
           <div className="leader">
@@ -84,15 +84,15 @@ const AboutUs = () => {
             >
               <div
                 style={{
-                  width: "200px",
-                  height: "200px",
+                  width: "210px",
+                  height: "210px",
                   border: "1px solid #2D947A",
                   borderRadius: "50%",
                 }}
               >
                 <img src={DXS} alt="Advisor 1" className="leader-img" />
               </div>
-              <p style={{ color: "red", fontWeight: "500" }}>LS Đào Xuân Sơn</p>
+              <p style={{ color: "red", fontWeight: "600" }}>LS Đào Xuân Sơn</p>
             </button>
           </a>
           <a href="/ProfileDaoTienPhong">
