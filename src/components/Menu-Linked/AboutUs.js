@@ -16,7 +16,7 @@ const AboutUs = () => {
       <div className="about-us-milestones">
         <h3>Ban lãnh đạo cấp cao</h3>
         <div className="leaders">
-          <a href="/ProfileDaoXuanSon">
+          <Link to={"/ProfileDaoXuanSon"}>
             <button
               style={{
                 background: "none",
@@ -40,7 +40,7 @@ const AboutUs = () => {
               </span>
               <p style={{ color: "red", fontWeight: "500" }}>Ông Phạm Ngọc Thạch</p>
             </button>
-          </a>
+          </Link>
           <div className="leader">
             <Link
               style={{
