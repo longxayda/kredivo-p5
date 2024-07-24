@@ -36,7 +36,7 @@ const Activity = () => {
         </ul>
       </div>
       <div className="text-banner-1-2-3">
-        <p style={{ fontWeight: "bold", fontSize: "32px", color: "#2D947A" }}>
+        <p style={{}}>
           Lĩnh vực hoạt động
         </p>
       </div>

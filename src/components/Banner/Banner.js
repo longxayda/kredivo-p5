@@ -139,7 +139,6 @@ const Banner = () => {
 
         <div className="flex flex-col items-center space-y-16 p-8">
           <div className="text-center">
-            <h2 className="section-title">Nền tảng</h2>
             <p className="section-description">
               Power5 Technology luôn tâm niệm rằng: "chúng tôi không chỉ là công
               nghệ".

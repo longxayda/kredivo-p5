@@ -118,6 +118,10 @@
     .main-footer .social-icons {
       justify-content: center;
     }
+    .left > h4{
+      font-size: 20px;
+      text-align: center;
+    }
   }
   
   @media (max-width: 480px) {
@@ -143,6 +147,11 @@
     .main-footer .social-icons {
       font-size: 20px; 
       gap: 15px;
+    }
+    .left > h4{
+      font-size: 15px;
+      text-align: center;
+    
     }
   }
   
