@@ -1,6 +1,6 @@
 import React from "react";
 import headerprofile from "../../../Image/profile/headerprofile.png";
-import daoxuanson from "../../../Image/profile/daoxuanson.png";
+import daoxuanson from "../../../Image/profile/daoxuanson1.png";
 import image from "../../../Image/profile/image.png";
 import "./Profile.css";
 const ProfileDaoXuanSon = () => {
@@ -24,7 +24,7 @@ const ProfileDaoXuanSon = () => {
       <div className="body-profile-xs">
         <div>
           <div className="profile-item-body">
-            <div>
+            <div style={{ width: "320px", height: "320px", overflow: "content" }}>
               <img src={daoxuanson} alt="hihihihihi" />
             </div>
             <div>
