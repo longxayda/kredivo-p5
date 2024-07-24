@@ -1,21 +1,21 @@
 .team-section {
   position: relative;
   width: 100%;
-  height: 400px; /* Điều chỉnh chiều cao theo nhu cầu */
+  height: 400px; /* Adjust height as needed */
   overflow: hidden;
 }
 
 .team-slider {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100%;
 }
 
 .team-slide {
-  position: absolute;
-  width: 30%; /* Điều chỉnh kích thước theo nhu cầu */
+  position: relative;
+  width: 30%; /* Adjust size as needed */
   height: 80%;
   transition: all 0.5s ease;
 }
@@ -25,24 +25,19 @@
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+  transition: all 0.5s ease;
 }
 
-.team-slide.left {
-  left: 5%;
+.team-slide.left img {
   transform: scale(0.8);
-  z-index: 1;
 }
 
-.team-slide.center {
-  left: 50%;
-  transform: translateX(-50%) scale(1);
-  z-index: 2;
+.team-slide.center img {
+  transform: scale(1);
 }
 
-.team-slide.right {
-  right: 5%;
+.team-slide.right img {
   transform: scale(0.8);
-  z-index: 1;
 }
 .main-title {
   color: #2d947a;
