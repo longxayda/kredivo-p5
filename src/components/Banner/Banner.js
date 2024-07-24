@@ -10,7 +10,12 @@ import SlideShowDoiTac from "./SlideShowDoiTac";
 import "../../components/container.css";
 import AboutUs from "../Menu-Linked/AboutUs";
 import hanhtrinh from "../../Image/hanhtrinh.png";
-
+import team1 from "../../Image/Đội ngũ P5/team1.jpg"
+import team2 from "../../Image/Đội ngũ P5/team2.jpg"
+import team3 from "../../Image/Đội ngũ P5/team3.jpg"
+import team4 from "../../Image/Đội ngũ P5/team4.jpg"
+import team5 from "../../Image/Đội ngũ P5/team5.jpg"
+import team6 from "../../Image/Đội ngũ P5/team6.jpg"
 const Banner = () => {
   return (
     <div className="container mt-5">
@@ -143,7 +148,18 @@ const Banner = () => {
           </p>
         </div>
 
-        <div className="text-center"></div>
+        <div className="team-section">
+          <h2 className="section-title">Đội ngũ Power5 Technology</h2>
+          <div className="team-slider">
+            <div className="team-slide"><img src={team1} alt="Team 1" /></div>
+            <div className="team-slide"><img src={team2} alt="Team 2" /></div>
+            <div className="team-slide"><img src={team3} alt="Team 3" /></div>
+            <div className="team-slide"><img src={team4} alt="Team 4" /></div>
+            <div className="team-slide"><img src={team5} alt="Team 5" /></div>
+            <div className="team-slide"><img src={team6} alt="Team 6" /></div>
+          </div>
+          <p className="team-description">Đội ngũ Power5 Technology Hãy cùng Power5 Technology kết nối công nghệ và giá trị nhân văn để kiến tạo tương lai tốt đẹp hơn.</p>
+        </div>
 
         <AboutUs />
         <div className="">
