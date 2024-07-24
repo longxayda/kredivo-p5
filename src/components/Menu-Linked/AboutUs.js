@@ -7,7 +7,8 @@ import DXS from "../../Image/profile/daoxuanson.png";
 import DTP from "../../Image/profile/DaoTienPhong.png";
 import HVL from "../../Image/profile/HoVanLong.png";
 import HSN from "../../Image/profile/HangSamNang.png";
-
+import NVT from "../../Image/profile/NguyenVanThua.png"
+import PNT from "../../Image/profile/PhamNgocThach.png"
 const AboutUs = () => {
   return (
     <div className="about-us-content">
@@ -32,7 +33,7 @@ const AboutUs = () => {
                   borderRadius: "50%",
                 }}
               >
-                <img src={logo1} alt="Leader 1" className="leader-img" />
+                <img src={PNT} alt="Leader 1" className="leader-img" />
               </div>
               <span style={{ color: "#2D947A", fontWeight: "700" }}>
                 Tổng Giám đốc
@@ -63,7 +64,7 @@ const AboutUs = () => {
                   alignContent: "center",
                 }}
               >
-                <img src={logo1} alt="Leader 1" className="leader-img" />
+                <img src={NVT} alt="Leader 1" className="leader-img" />
               </div>
               <span style={{ color: "#2D947A", fontWeight: "700" }}>
                 Phó Tổng Giám đốc - Phụ trách kỹ thuật

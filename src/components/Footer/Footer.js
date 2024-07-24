@@ -17,6 +17,7 @@ const Footer = () => {
         </div>
         <div className="main-footer">
           <div className="left">
+            <h4>CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN CÔNG NGHỆ POWER 5</h4>
             <div><FontAwesomeIcon icon={faLocationDot} className="fa-icon" />
               <span> Số 9 Đường số 12, Khu phố 6, P.Bình Chiểu, Thủ Đức, Tp.Hồ Chí Minh</span>
             </div>
