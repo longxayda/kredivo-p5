@@ -9,13 +9,16 @@ import nanglucketnoi from "../../Image/na_luc_hoat_dong.png";
 import SlideShowDoiTac from "./SlideShowDoiTac";
 import "../../components/container.css";
 import AboutUs from "../Menu-Linked/AboutUs";
-import hanhtrinh from "../../Image/hanhtrinh.png";
+
 import team1 from "../../Image/Đội ngũ P5/team1.jpg";
 import team2 from "../../Image/Đội ngũ P5/team2.jpg";
 import team3 from "../../Image/Đội ngũ P5/team3.jpg";
 import team4 from "../../Image/Đội ngũ P5/team4.jpg";
 import team5 from "../../Image/Đội ngũ P5/team5.jpg";
 import team6 from "../../Image/Đội ngũ P5/team6.jpg";
+import power1 from "../../Image/power5-1.png";
+import power2 from "../../Image/power5-2.png";
+
 const Banner = () => {
   const sliderRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(-2); // Start at -2 to have empty left and center
@@ -57,61 +60,72 @@ const Banner = () => {
             <blockquote className="main-quote">
               “Nơi công nghệ kết nối sức mạnh và giá trị nhân văn”
             </blockquote>
-            <h2 className="sub-title">Số 5</h2>
-            <p className="sub-description">
-              Trong nhiều nền văn hóa, số 5 được coi là một con số mạnh mẽ,
-              tượng trưng cho sự cân bằng, hài hòa và kết nối. Power5 Technology
-              lấy cảm hứng từ ý nghĩa sâu sắc này để truyền tải thông điệp về sứ
-              mệnh của mình: kết nối sức mạnh công nghệ với những giá trị nhân
-              văn sâu sắc.
-            </p>
-            <h3 className="section-title">
-              Công nghệ phục vụ con người và giữ gìn giá trị nhân văn
-            </h3>
-            <p className="section-description">
-              Với Power5 Technology, công nghệ không chỉ là những con số và
-              thuật toán khan khan. Chúng tôi luôn hướng đến việc phát triển
-              công nghệ có giá trị ứng dụng cao, phục vụ con người và giữ vững
-              những giá trị nhân văn (giá trị đạo đức, giá trị xã hội). Mỗi sản
-              phẩm, dịch vụ của Power5 đều được tạo ra với tinh thần trách nhiệm
-              cao, đảm bảo mang lại lợi ích thiết thực cho cộng đồng.
-            </p>
+            <div className="section-body-conent">
+              <div>
+                <h2 className="sub-title">Số 5</h2>
+                <p className="sub-description">
+                  Trong nhiều nền văn hóa, số 5 được coi là một con số mạnh mẽ,
+                  tượng trưng cho sự cân bằng, hài hòa và kết nối. Power5
+                  Technology lấy cảm hứng từ ý nghĩa sâu sắc này để truyền tải
+                  thông điệp về sứ mệnh của mình: kết nối sức mạnh công nghệ với
+                  những giá trị nhân văn sâu sắc.
+                </p>
+                <h3 className="section-title">
+                  Công nghệ phục vụ con người và giữ gìn giá trị nhân văn
+                </h3>
+                <p className="section-description">
+                  Với Power5 Technology, công nghệ không chỉ là những con số và
+                  thuật toán khan khan. Chúng tôi luôn hướng đến việc phát triển
+                  công nghệ có giá trị ứng dụng cao, phục vụ con người và giữ
+                  vững những giá trị nhân văn (giá trị đạo đức, giá trị xã hội).
+                  Mỗi sản phẩm, dịch vụ của Power5 đều được tạo ra với tinh thần
+                  trách nhiệm cao, đảm bảo mang lại lợi ích thiết thực cho cộng
+                  đồng.
+                </p>
+              </div>
+              <div>
+                <img src={power1} alt="power1" />
+              </div>
+            </div>
           </div>
         </div>
-
-        <div className="custom-text-banner">
+        <div style={{ display: "flex", justifyContent: "center",alignItems: "center",paddingTop: "20px" }}>
           <h2 className="section-title">
             Hành trình khởi đầu từ đam mê và sự kết nối
           </h2>
-          <div className="section-description">
-            <p>
-              Năm 2018, ngọn lửa đam mê công nghệ được khơi dậy bởi đội ngũ kỹ
-              sư đầy nhiệt huyết và giàu kinh nghiệm. Từ đó, Power5 được thành
-              lập dưới hình thức Công ty TNHH, đánh dấu bước đầu tiên trên hành
-              trình công nghệ.
-            </p>
-            <p>
-              Trải qua quá trình sáp nhập và phát triển, Power5 Technology là
-              pháp nhân mới được thành lập độc lập với doanh nghiệp ban đầu
-              nhưng kế thừa nguồn lực và kết nối vững vàng từ công ty tiền thân.
-              Là một pháp nhân mới, Power5 Technology còn là biểu tượng cho sự
-              hợp nhất của trí tuệ, đam mê và khát vọng chinh phục những thử
-              thách mới.
-            </p>
-          </div>
-          <div className="flex-content section-description">
+        </div>
+        <div className="custom-text-banner">
+          <div>
             <img
-              src={hanhtrinh}
+              src={power2}
               alt="Hành trình khởi đầu"
               className="intro-image"
             />
-            <p className="flex-text">
-              Với tầm nhìn chiến lược, Power5 Technology hướng đến mục tiêu phát
-              triển thành một hệ sinh thái đầu tư và công nghệ mở rộng. Hệ sinh
-              thái này bao gồm những thành tựu trong lĩnh vực công nghệ, cũng
-              như kiên trì đồng hành cùng các sáng tạo, mang đến những giá trị
-              thiết thực cho cộng đồng.
-            </p>
+          </div>
+          <div className="section-description">
+            <div>
+              <p>
+                Năm 2018, ngọn lửa đam mê công nghệ được khơi dậy bởi đội ngũ kỹ
+                sư đầy nhiệt huyết và giàu kinh nghiệm. Từ đó, Power5 được thành
+                lập dưới hình thức Công ty TNHH, đánh dấu bước đầu tiên trên
+                hành trình công nghệ.
+              </p>
+              <p>
+                Trải qua quá trình sáp nhập và phát triển, Power5 Technology là
+                pháp nhân mới được thành lập độc lập với doanh nghiệp ban đầu
+                nhưng kế thừa nguồn lực và kết nối vững vàng từ công ty tiền
+                thân. Là một pháp nhân mới, Power5 Technology còn là biểu tượng
+                cho sự hợp nhất của trí tuệ, đam mê và khát vọng chinh phục
+                những thử thách mới.
+              </p>
+              <p className="flex-text">
+                Với tầm nhìn chiến lược, Power5 Technology hướng đến mục tiêu
+                phát triển thành một hệ sinh thái đầu tư và công nghệ mở rộng.
+                Hệ sinh thái này bao gồm những thành tựu trong lĩnh vực công
+                nghệ, cũng như kiên trì đồng hành cùng các sáng tạo, mang đến
+                những giá trị thiết thực cho cộng đồng.
+              </p>
+            </div>
           </div>
         </div>
 
