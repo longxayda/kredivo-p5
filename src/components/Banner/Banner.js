@@ -18,19 +18,21 @@ import team5 from "../../Image/Đội ngũ P5/team5.jpg";
 import team6 from "../../Image/Đội ngũ P5/team6.jpg";
 const Banner = () => {
   const sliderRef = useRef(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(-2); // Start at -2 to have empty left and center
   const teamImages = [team1, team2, team3, team4, team5, team6];
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % teamImages.length);
-    }, 3000); // Chuyển ảnh mỗi 3 giây
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % (teamImages.length + 2));
+    }, 3000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [teamImages.length]);
 
-  const getImageIndex = (offset) => {
-    return (currentIndex + offset + teamImages.length) % teamImages.length;
+  const getImage = (position) => {
+    const index =
+      (currentIndex + position + teamImages.length) % teamImages.length;
+    return index >= 0 && index < teamImages.length ? teamImages[index] : null;
   };
   return (
     <div className="container mt-5">
@@ -183,13 +185,13 @@ const Banner = () => {
           <h2 className="section-title">Đội ngũ Power5 Technology</h2>
           <div className="team-slider" ref={sliderRef}>
             <div className="team-slide left">
-              <img src={teamImages[getImageIndex(-1)]} alt="Team Left" />
+              {getImage(0) && <img src={getImage(0)} alt="Team Left" />}
             </div>
             <div className="team-slide center">
-              <img src={teamImages[currentIndex]} alt="Team Center" />
+              {getImage(1) && <img src={getImage(1)} alt="Team Center" />}
             </div>
             <div className="team-slide right">
-              <img src={teamImages[getImageIndex(1)]} alt="Team Right" />
+              {getImage(2) && <img src={getImage(2)} alt="Team Right" />}
             </div>
           </div>
           <p className="team-description">
