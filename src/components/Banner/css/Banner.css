@@ -93,7 +93,7 @@
 .section-body-conent {
   display: flex;
   flex-direction: row;
-justify-content: space-evenly;
+  justify-content: space-evenly;
   gap: 20px;
 }
 
@@ -109,7 +109,6 @@ justify-content: space-evenly;
   gap: 30px;
 }
 
-
 .custom-text-banner .section-description {
   text-align: justify;
   color: #333;
@@ -117,8 +116,6 @@ justify-content: space-evenly;
   max-width: 800px;
   margin: 0 auto;
 }
-
-
 
 .flex-content {
   display: flex;
@@ -218,7 +215,7 @@ justify-content: space-evenly;
 .text-center {
   text-align: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -414,5 +411,124 @@ justify-content: space-evenly;
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .section-body-conent {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .section-body-conent img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .custom-text-banner {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .intro-image {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-body-conent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-body-conent .sub-description,
+  .section-body-conent .section-description {
+    max-width: 100%;
+  }
+
+  .custom-text-banner {
+    padding: 15px;
+  }
+
+  .custom-text-banner .section-description {
+    font-size: 14px;
+  }
+
+  .text-center {
+    flex-direction: column;
+  }
+
+  .text-center img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-body-conent {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .section-body-conent img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .custom-text-banner {
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .intro-image {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+
+  .text-center {
+    padding: 20px;
+  }
+
+  .images-banner img {
+    width: 100%;
+    max-width: 150px;
+  }
+
+  .banner-item-right {
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-body-conent {
+    gap: 10px;
+  }
+
+  .custom-text-banner {
+    padding: 10px;
+  }
+
+  .intro-image {
+    max-width: 300px;
+  }
+
+  .text-2xl {
+    font-size: 18px;
+  }
+
+  .p-8 {
+    padding: 10px;
+  }
+
+  .space-y-16 {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }

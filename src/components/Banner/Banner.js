@@ -18,6 +18,7 @@ import team5 from "../../Image/Đội ngũ P5/team5.jpg";
 import team6 from "../../Image/Đội ngũ P5/team6.jpg";
 import power1 from "../../Image/power5-1.png";
 import power2 from "../../Image/power5-2.png";
+import power3 from "../../Image/power5-3.png";
 
 const Banner = () => {
   const sliderRef = useRef(null);
@@ -44,6 +45,9 @@ const Banner = () => {
         <div
           style={{
             textAlign: "center",
+            display: "flex",
+            justifyContent: "center",
+            alignContent: "center",
           }}
         >
           <div
@@ -55,7 +59,7 @@ const Banner = () => {
           >
             <h1 className="main-title">Power5 Technology</h1>
             <blockquote className="main-quote">
-            Nơi kết nối sức mạnh công nghệ và giá trị nhân văn
+              “Nơi công nghệ kết nối sức mạnh và giá trị nhân văn”
             </blockquote>
             <div className="section-body-conent">
               <div>
@@ -68,7 +72,7 @@ const Banner = () => {
                   những giá trị nhân văn sâu sắc.
                 </p>
                 <h3 className="section-title">
-                  Công nghệ phục vụ con người và <br/> giữ gìn giá trị nhân văn
+                  Công nghệ phục vụ con người và giữ gìn giá trị nhân văn
                 </h3>
                 <p className="section-description">
                   Với Power5 Technology, công nghệ không chỉ là những con số và
@@ -86,7 +90,14 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div style={{ display: "flex", justifyContent: "center",alignItems: "center",paddingTop: "20px" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            paddingTop: "20px",
+          }}
+        >
           <h2 className="section-title">
             Hành trình khởi đầu từ đam mê và sự kết nối
           </h2>
@@ -128,8 +139,8 @@ const Banner = () => {
 
         <div className="flex flex-col items-center space-y-16 p-8">
           <div className="text-center">
-            <h2 className="section-title" style={{textAlign:'center'}}>Con người, Hệ sinh thái, Công nghệ, Năng lực Kết Nối và Trách nhiệm - Nền tảng cho sự thành công  </h2>
-            <p className="section-description" style={{maxWidth:'800px'}}>
+            <h2 className="section-title">Nền tảng</h2>
+            <p className="section-description">
               Power5 Technology luôn tâm niệm rằng: "chúng tôi không chỉ là công
               nghệ".
               <br />
@@ -178,18 +189,24 @@ const Banner = () => {
           </div>
         </div>
         <div className="text-center">
-          <h2 className="section-title">
-            Khởi nguồn từ công nghệ cho giáo dục và vươn đến Blockchain và AI
-          </h2>
-          <p className="section-description">
-            Hành trình khởi đầu của Power5 Technology trước hết là một công ty
-            phát triển công nghệ trong lĩnh vực giáo dục (chuyển đổi số dự án an
-            <br /> toàn học đường, nền tảng LMS Power5.edu.vn). Với những thành
-            công đạt được, Power5 tiếp tục mở rộng sang các lĩnh vực công nghệ
-            trọng yếu
-            <br /> như Blockchain và AI, đồng thời tham gia vào tiến trình
-            chuyển đổi số của doanh nghiệp.
-          </p>
+          <div>
+            <h2 className="section-title">
+              Khởi nguồn từ công nghệ cho giáo dục và vươn đến Blockchain và AI
+            </h2>
+            <p className="section-description">
+              Hành trình khởi đầu của Power5 Technology trước hết là một công ty
+              phát triển công nghệ trong lĩnh vực giáo dục (chuyển đổi số dự án
+              an
+              <br /> toàn học đường, nền tảng LMS Power5.edu.vn). Với những
+              thành công đạt được, Power5 tiếp tục mở rộng sang các lĩnh vực
+              công nghệ trọng yếu
+              <br /> như Blockchain và AI, đồng thời tham gia vào tiến trình
+              chuyển đổi số của doanh nghiệp.
+            </p>
+          </div>
+          <div>
+            <img src={power3} alt="power3-aa" />
+          </div>
         </div>
 
         <div className="team-section">
@@ -210,7 +227,6 @@ const Banner = () => {
             nghệ và giá trị nhân văn để kiến tạo tương lai tốt đẹp hơn.
           </p>
         </div>
-
         <AboutUs />
         <div className="">
           <p
