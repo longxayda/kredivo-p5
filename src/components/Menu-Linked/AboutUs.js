@@ -12,38 +12,18 @@ import HSN from "../../Image/profile/HangSamNang.png";
 const AboutUs = () => {
   return (
         <div className="about-us-content">
+          <div className="about-us-intro">
+            <h6>
+              Hành trình khởi đầu của Power5 Technology trước hết là một công ty
+              phát triển công nghệ trong lĩnh vực giáo dục (chuyển đổi số dự án
+              an toàn học đường, nền tảng LMS Power5.edu.vn). Với những thành
+              công đạt được, Power5 tiếp tục mở rộng sang các lĩnh vực công nghệ
+              trọng yếu như Blockchain và AI, đồng thời tham gia vào tiến trình
+              chuyển đổi số của doanh nghiệp.
+            </h6>
+          </div>
           <div className="about-us-milestones">
-            <h3>Cột mốc chính</h3>
-            <div className="milestone">
-              <div className="milestone-year">
-                <FontAwesomeIcon icon={faStar} />
-                <p>2024</p>
-              </div>
-              <div className="milestone-description">
-                <p>
-                  Trải qua quá trình sáp nhập và phát triển, Power5 Technology
-                  là pháp nhân mới được thành lập độc lập với doanh nghiệp ban
-                  đầu nhưng kế thừa nguồn lực và kết nối vững vàng từ công ty
-                  tiền thân. Là một pháp nhân mới, Power5 Technology còn là biểu
-                  tượng cho sự hợp nhất của trí tuệ, đam mê và khát vọng chinh
-                  phục những thử thách mới.
-                </p>
-              </div>
-            </div>
-            <div className="milestone">
-              <div className="milestone-year">
-                <FontAwesomeIcon icon={faStar} />
-                <p>2018</p>
-              </div>
-              <div className="milestone-description">
-                <p>
-                  Ngọn lửa đam mê công nghệ được khơi dậy bởi đội ngũ kỹ sư đầy
-                  nhiệt huyết và giàu kinh nghiệm. Từ đó, Power5 được thành lập
-                  dưới hình thức Công ty TNHH, đánh dấu bước đầu tiên trên hành
-                  trình công nghệ.
-                </p>
-              </div>
-            </div>
+        
             <h3>Ban lãnh đạo cấp cao</h3>
             <div>
               <div className="leaders">
