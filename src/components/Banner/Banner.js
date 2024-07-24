@@ -44,9 +44,6 @@ const Banner = () => {
         <div
           style={{
             textAlign: "center",
-            display: "flex",
-            justifyContent: "center",
-            alignContent: "center",
           }}
         >
           <div
@@ -58,7 +55,7 @@ const Banner = () => {
           >
             <h1 className="main-title">Power5 Technology</h1>
             <blockquote className="main-quote">
-              “Nơi công nghệ kết nối sức mạnh và giá trị nhân văn”
+            Nơi kết nối sức mạnh công nghệ và giá trị nhân văn
             </blockquote>
             <div className="section-body-conent">
               <div>
@@ -71,7 +68,7 @@ const Banner = () => {
                   những giá trị nhân văn sâu sắc.
                 </p>
                 <h3 className="section-title">
-                  Công nghệ phục vụ con người và giữ gìn giá trị nhân văn
+                  Công nghệ phục vụ con người và <br/> giữ gìn giá trị nhân văn
                 </h3>
                 <p className="section-description">
                   Với Power5 Technology, công nghệ không chỉ là những con số và
@@ -131,8 +128,8 @@ const Banner = () => {
 
         <div className="flex flex-col items-center space-y-16 p-8">
           <div className="text-center">
-            <h2 className="section-title">Nền tảng</h2>
-            <p className="section-description">
+            <h2 className="section-title" style={{textAlign:'center'}}>Con người, Hệ sinh thái, Công nghệ, Năng lực Kết Nối và Trách nhiệm - Nền tảng cho sự thành công  </h2>
+            <p className="section-description" style={{maxWidth:'800px'}}>
               Power5 Technology luôn tâm niệm rằng: "chúng tôi không chỉ là công
               nghệ".
               <br />
