@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import SliderShow from "./SlideShow";
 import "../Banner/css/Banner.css";
 import congnghe from "../../Image/cong_nghe.png";
@@ -10,19 +10,47 @@ import SlideShowDoiTac from "./SlideShowDoiTac";
 import "../../components/container.css";
 import AboutUs from "../Menu-Linked/AboutUs";
 import hanhtrinh from "../../Image/hanhtrinh.png";
-import team1 from "../../Image/Đội ngũ P5/team1.jpg"
-import team2 from "../../Image/Đội ngũ P5/team2.jpg"
-import team3 from "../../Image/Đội ngũ P5/team3.jpg"
-import team4 from "../../Image/Đội ngũ P5/team4.jpg"
-import team5 from "../../Image/Đội ngũ P5/team5.jpg"
-import team6 from "../../Image/Đội ngũ P5/team6.jpg"
+import team1 from "../../Image/Đội ngũ P5/team1.jpg";
+import team2 from "../../Image/Đội ngũ P5/team2.jpg";
+import team3 from "../../Image/Đội ngũ P5/team3.jpg";
+import team4 from "../../Image/Đội ngũ P5/team4.jpg";
+import team5 from "../../Image/Đội ngũ P5/team5.jpg";
+import team6 from "../../Image/Đội ngũ P5/team6.jpg";
 const Banner = () => {
+  const sliderRef = useRef(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const teamImages = [team1, team2, team3, team4, team5, team6];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % teamImages.length);
+    }, 3000); // Chuyển ảnh mỗi 3 giây
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const getImageIndex = (offset) => {
+    return (currentIndex + offset + teamImages.length) % teamImages.length;
+  };
   return (
     <div className="container mt-5">
       <SliderShow />
       <div className="content-section">
-        <div style={{ textAlign: "center" ,display:'flex',justifyContent:'center',alignContent:'center'}}>
-          <div style={{display:'flex' , flexDirection:'column' , justifyContent:'center'}}>
+        <div
+          style={{
+            textAlign: "center",
+            display: "flex",
+            justifyContent: "center",
+            alignContent: "center",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+            }}
+          >
             <h1 className="main-title">Power5 Technology</h1>
             <blockquote className="main-quote">
               “Nơi công nghệ kết nối sức mạnh và giá trị nhân văn”
@@ -63,14 +91,18 @@ const Banner = () => {
             <p>
               Trải qua quá trình sáp nhập và phát triển, Power5 Technology là
               pháp nhân mới được thành lập độc lập với doanh nghiệp ban đầu
-              nhưng kế thừa nguồn lực và kết nối vững vàng từ công ty tiền
-              thân. Là một pháp nhân mới, Power5 Technology còn là biểu tượng
-              cho sự hợp nhất của trí tuệ, đam mê và khát vọng chinh phục những
-              thử thách mới.
+              nhưng kế thừa nguồn lực và kết nối vững vàng từ công ty tiền thân.
+              Là một pháp nhân mới, Power5 Technology còn là biểu tượng cho sự
+              hợp nhất của trí tuệ, đam mê và khát vọng chinh phục những thử
+              thách mới.
             </p>
           </div>
           <div className="flex-content section-description">
-            <img src={hanhtrinh} alt="Hành trình khởi đầu" className="intro-image" />
+            <img
+              src={hanhtrinh}
+              alt="Hành trình khởi đầu"
+              className="intro-image"
+            />
             <p className="flex-text">
               Với tầm nhìn chiến lược, Power5 Technology hướng đến mục tiêu phát
               triển thành một hệ sinh thái đầu tư và công nghệ mở rộng. Hệ sinh
@@ -129,7 +161,6 @@ const Banner = () => {
                 src={trachnhiem}
                 alt="trachnhiem"
               />
-  
             </div>
           </div>
         </div>
@@ -150,15 +181,21 @@ const Banner = () => {
 
         <div className="team-section">
           <h2 className="section-title">Đội ngũ Power5 Technology</h2>
-          <div className="team-slider">
-            <div className="team-slide"><img src={team1} alt="Team 1" /></div>
-            <div className="team-slide"><img src={team2} alt="Team 2" /></div>
-            <div className="team-slide"><img src={team3} alt="Team 3" /></div>
-            <div className="team-slide"><img src={team4} alt="Team 4" /></div>
-            <div className="team-slide"><img src={team5} alt="Team 5" /></div>
-            <div className="team-slide"><img src={team6} alt="Team 6" /></div>
+          <div className="team-slider" ref={sliderRef}>
+            <div className="team-slide left">
+              <img src={teamImages[getImageIndex(-1)]} alt="Team Left" />
+            </div>
+            <div className="team-slide center">
+              <img src={teamImages[currentIndex]} alt="Team Center" />
+            </div>
+            <div className="team-slide right">
+              <img src={teamImages[getImageIndex(1)]} alt="Team Right" />
+            </div>
           </div>
-          <p className="team-description">Đội ngũ Power5 Technology Hãy cùng Power5 Technology kết nối công nghệ và giá trị nhân văn để kiến tạo tương lai tốt đẹp hơn.</p>
+          <p className="team-description">
+            Đội ngũ Power5 Technology Hãy cùng Power5 Technology kết nối công
+            nghệ và giá trị nhân văn để kiến tạo tương lai tốt đẹp hơn.
+          </p>
         </div>
 
         <AboutUs />
