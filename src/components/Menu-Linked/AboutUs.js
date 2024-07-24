@@ -74,7 +74,6 @@ const AboutUs = () => {
         </div>
         <h3 style={{ marginTop: "30px" }}>Ban cố vấn</h3>
         <div className="leaders-advisors">
-          {/* <Link href="/ProfileDaoXuanSon"> */}
           <Link to="/ProfileDaoXuanSon">
             <button
               style={{
@@ -119,7 +118,7 @@ const AboutUs = () => {
               <p>LS Đào Tiến Phong</p>
             </button>
           </Link>
-          <Link href="/ProfileHangSamNang">
+          <Link to="/ProfileHangSamNang">
             <button
               style={{
                 background: "none",
@@ -141,7 +140,7 @@ const AboutUs = () => {
               <p>TS Hàng Sấm Nang</p>
             </button>
           </Link>
-          <Link href="/ProfileHoVanLong">
+          <Link to="/ProfileHoVanLong">
             <button
               style={{
                 background: "none",
@@ -163,7 +162,7 @@ const AboutUs = () => {
               <p>Ông Hồ Vân Long</p>
             </button>
           </Link>
-          <Link href="/ProfileHaHuyHieu">
+          <Link to="/ProfileHaHuyHieu">
             <button
               style={{
                 background: "none",
