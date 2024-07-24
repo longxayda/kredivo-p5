@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import headerprofile from "../../../Image/profile/headerprofile.png";
 import DaoTienPhong from "../../../Image/profile/DaoTienPhong.png";
 import image from "../../../Image/profile/image.png";
 import "./Profile.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 const ProfileDaoTienPhong = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleContent = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div className="container">
       <div className="image-header">
         <img src={headerprofile} alt="headerprofile" />
       </div>
-
       <div className="body-item">
         <div class="banner-name">
           <div class="banner-content-name">
@@ -38,12 +45,34 @@ const ProfileDaoTienPhong = () => {
                 <br />
                 -Đồng trưởng làng công nghệ Blockchain –<br /> Techfest Việt Nam
                 <br />
-                Thành viên Hội đồng chuyên gia – Hiệp hội <br />
-                tư vấn tài chính Việt Nam (VFCA)
-                <br /> Cố vấn cấp cao quỹ đầu tư Khởi nghiệp sáng tạo
-                <br /> DIF Fund.
+                
               </p>
             </div>
+          </div>
+          {isOpen && (
+            <p>
+              Thành viên Hội đồng chuyên gia – Hiệp hội tư vấn tài chính
+              Việt Nam (VFCA)
+              <br /> Cố vấn cấp cao quỹ đầu tư Khởi nghiệp sáng tạo DIF Fund
+            </p>
+          )}
+          <div
+            style={{
+              // border: "1px solid #2D947A",
+              marginTop: "20px",
+              display: "flex",
+              justifyContent: "flex-end",
+            }}
+          >
+            <button
+              style={{ border: "none", background: "none" }}
+              onClick={toggleContent}
+            >
+              <FontAwesomeIcon
+                style={{ fontWeight: "100" }}
+                icon={isOpen ? faAngleUp : faAngleDown}
+              />
+            </button>
           </div>
           <div className="profile-item-content">
             <p style={{ color: "red", fontWeight: "bold", marginTop: "10px" }}>
