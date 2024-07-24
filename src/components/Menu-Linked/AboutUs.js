@@ -11,12 +11,11 @@ import HSN from "../../Image/profile/HangSamNang.png";
 const AboutUs = () => {
   return (
     <div className="about-us-content">
-      <div className="about-us-intro">
-      </div>
+      <div className="about-us-intro"></div>
       <div className="about-us-milestones">
         <h3>Ban lãnh đạo cấp cao</h3>
         <div className="leaders">
-          <Link to={"/ProfileDaoXuanSon"}>
+          <Link to="/ProfileDaoXuanSon">
             <button
               style={{
                 background: "none",
@@ -38,7 +37,9 @@ const AboutUs = () => {
               <span style={{ color: "#2D947A", fontWeight: "700" }}>
                 Tổng Giám đốc
               </span>
-              <p style={{ color: "red", fontWeight: "500" }}>Ông Phạm Ngọc Thạch</p>
+              <p style={{ color: "red", fontWeight: "500" }}>
+                Ông Phạm Ngọc Thạch
+              </p>
             </button>
           </Link>
           <div className="leader">
@@ -73,7 +74,8 @@ const AboutUs = () => {
         </div>
         <h3 style={{ marginTop: "30px" }}>Ban cố vấn</h3>
         <div className="leaders-advisors">
-          <a href="/ProfileDaoXuanSon">
+          {/* <Link href="/ProfileDaoXuanSon"> */}
+          <Link to="/ProfileDaoXuanSon">
             <button
               style={{
                 background: "none",
@@ -94,8 +96,8 @@ const AboutUs = () => {
               </div>
               <p style={{ color: "red", fontWeight: "500" }}>LS Đào Xuân Sơn</p>
             </button>
-          </a>
-          <a href="/ProfileDaoTienPhong">
+          </Link>
+          <Link to="/ProfileDaoTienPhong">
             <button
               style={{
                 background: "none",
@@ -116,8 +118,8 @@ const AboutUs = () => {
               </div>
               <p>LS Đào Tiến Phong</p>
             </button>
-          </a>
-          <a href="/ProfileHangSamNang">
+          </Link>
+          <Link href="/ProfileHangSamNang">
             <button
               style={{
                 background: "none",
@@ -138,8 +140,8 @@ const AboutUs = () => {
               </div>
               <p>TS Hàng Sấm Nang</p>
             </button>
-          </a>
-          <a href="/ProfileHoVanLong">
+          </Link>
+          <Link href="/ProfileHoVanLong">
             <button
               style={{
                 background: "none",
@@ -160,8 +162,8 @@ const AboutUs = () => {
               </div>
               <p>Ông Hồ Vân Long</p>
             </button>
-          </a>
-          <a href="/ProfileHaHuyHieu">
+          </Link>
+          <Link href="/ProfileHaHuyHieu">
             <button
               style={{
                 background: "none",
@@ -182,7 +184,7 @@ const AboutUs = () => {
               </div>
               <p>Hà Huy Hiệu</p>
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

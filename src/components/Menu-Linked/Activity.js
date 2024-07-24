@@ -94,7 +94,7 @@ const Activity = () => {
             <p className="text-1">Cung cấp các dịch vụ công nghệ</p>
             <p>
               Chúng tôi cũng cung cấp các dịch vụ công nghệ theo yêu cầu của
-              khách hàng, <a href="/product">...xem thêm</a>
+              khách hàng, <Link to="/product">...xem thêm</Link>
             </p>
           </div>
           <div className="item-image">
