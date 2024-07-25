@@ -16,7 +16,7 @@ const AboutUs = () => {
       <div className="about-us-milestones">
         <h3>Ban lãnh đạo cấp cao</h3>
         <div className="leaders">
-          <Link to="/ProfileDaoXuanSon">
+          <Link >
             <button
               style={{
                 background: "none",
