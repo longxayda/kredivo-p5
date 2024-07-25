@@ -3,6 +3,7 @@ import headerprofile from "../../../Image/profile/headerprofile.png";
 import daoxuanson from "../../../Image/profile/daoxuanson1.png";
 import image from "../../../Image/profile/image.png";
 import "./Profile.css";
+import CoVanKhac from "./CoVanKhac";
 const ProfileDaoXuanSon = () => {
   return (
     <div className="container">
@@ -62,6 +63,7 @@ const ProfileDaoXuanSon = () => {
           </div>
         </div>
       </div>
+      <CoVanKhac />
     </div>
   );
 };

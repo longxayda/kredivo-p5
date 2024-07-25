@@ -6,6 +6,7 @@ import "./Profile.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import CoVanKhac from "./CoVanKhac";
 const ProfileDaoTienPhong = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -105,6 +106,7 @@ const ProfileDaoTienPhong = () => {
           </div>
         </div>
       </div>
+      <CoVanKhac />
     </div>
   );
 };
