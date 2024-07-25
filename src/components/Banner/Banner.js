@@ -73,7 +73,7 @@ const Banner = () => {
                   những giá trị nhân văn sâu sắc.
                 </p>
                 <h3 className="section-title">
-                  Công nghệ phục vụ con người và giữ gìn giá trị nhân văn
+                  Công nghệ phục vụ con người và <br/> giữ gìn giá trị nhân văn
                 </h3>
                 <p className="section-description">
                   Với Power5 Technology, công nghệ không chỉ là những con số và
@@ -144,7 +144,7 @@ const Banner = () => {
             -<br /> Nền tảng cho sự thành công
           </h3>
           <div className="text-center">
-            <p className="section-description">
+            <p className="section-description" style={{textAlign:'center', maxWidth:'750px'}}>
               Power5 Technology luôn tâm niệm rằng: "chúng tôi không chỉ là công
               nghệ".
               <br />
