@@ -94,7 +94,7 @@ const CoVanKhac = () => {
               alignContent: "center",
               alignItems: "center",
             }}
-            to={"/ProfileNguyenVanThua"}
+            
           >
             <div
               style={{

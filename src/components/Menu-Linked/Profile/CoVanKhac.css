@@ -214,12 +214,12 @@
   font-size: 24px; /* Giữ kích thước font lớn trên màn hình lớn */
   display: inline-block;
   transform: skewX(-20deg);
-  padding-top: 20px;
+  /* padding-top: 20px; */
 }
 @media (max-width: 768px) {
   .body-profile-xs {
     flex-direction: column; /* Chuyển thành cột cho màn hình nhỏ */
-    gap: 20px; /* Giảm khoảng cách giữa các phần tử */
+    gap: 10px; /* Giảm khoảng cách giữa các phần tử */
   }
   .profile-item-body {
     flex-direction: column; /* Chuyển thành cột cho màn hình nhỏ */
