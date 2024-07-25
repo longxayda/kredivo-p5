@@ -2,6 +2,7 @@ import React from "react";
 import headerprofile from "../../../Image/profile/headerprofile.png";
 import HoVanLong from "../../../Image/profile/HoVanLong.png";
 import image from "../../../Image/profile/image.png";
+import CoVanKhac from "./CoVanKhac";
 import "./Profile.css";
 const ProfileHaHuyHieu = () => {
   return (
@@ -47,6 +48,7 @@ const ProfileHaHuyHieu = () => {
           </div>
         </div>
       </div>
+      <CoVanKhac />
     </div>
   );
 };

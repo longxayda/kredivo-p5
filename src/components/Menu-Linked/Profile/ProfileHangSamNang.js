@@ -3,6 +3,7 @@ import headerprofile from "../../../Image/profile/headerprofile.png";
 import HangSamNang from "../../../Image/profile/HangSamNang.png";
 import image from "../../../Image/profile/image.png";
 import "./Profile.css";
+import CoVanKhac from "./CoVanKhac";
 const ProfileHangSamNang = () => {
   return (
     <div className="container">
@@ -58,6 +59,7 @@ const ProfileHangSamNang = () => {
           </div>
         </div>
       </div>
+      <CoVanKhac />
     </div>
   );
 };

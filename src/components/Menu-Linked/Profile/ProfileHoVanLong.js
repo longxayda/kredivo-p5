@@ -3,6 +3,7 @@ import headerprofile from "../../../Image/profile/headerprofile.png";
 import HoVanLong from "../../../Image/profile/HoVanLong.png";
 import image from "../../../Image/profile/image.png";
 import "./Profile.css";
+import CoVanKhac from "./CoVanKhac";
 const ProfileHoVanLong = () => {
   return (
     <div className="container">
@@ -52,6 +53,7 @@ const ProfileHoVanLong = () => {
           </div>
         </div>
       </div>
+      <CoVanKhac />
     </div>
   );
 };

@@ -1,0 +1,239 @@
+/* Main container for the About Us section */
+.about-us-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px;
+  min-height: 100vh;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-us-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  gap: 50px;
+}
+
+/* Introduction text styling */
+.about-us-intro h6 {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Milestones section styling */
+.about-us-milestones {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.about-us-milestones h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2d947a;
+  display: inline-block;
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+/* Individual milestone styling */
+.milestone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.milestone-year {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2d947a;
+  margin-right: 10px;
+}
+
+.milestone-year > p {
+  padding-top: 10px;
+  align-content: center;
+  align-items: center;
+}
+
+.milestone-year .fa-star {
+  margin-right: 10px;
+  align-items: center;
+}
+
+.milestone-description {
+  font-size: 1rem;
+  line-height: 2;
+  color: #555;
+}
+
+.leaders {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+.leader {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.leader-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.leader p {
+  text-align: center;
+  color: red;
+  font-weight: 600;
+}
+@media (max-width: 1200px) {
+  .leaders-advisors,
+  .leaders {
+    gap: 15px;
+  }
+
+  .leader-img-container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .leader-title {
+    font-size: 14px;
+  }
+
+  .leader-name {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .about-us-main {
+    padding: 50px 15px;
+  }
+
+  .about-us-intro h6,
+  .milestone-description {
+    font-size: 1rem;
+  }
+
+  .milestone-year {
+    font-size: 1rem;
+  }
+
+  .about-us-milestones h3 {
+    font-size: 1.3rem;
+  }
+
+  .leaders-advisors,
+  .leaders {
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leader-img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-main {
+    padding: 30px 10px;
+  }
+
+  .about-us-intro h6,
+  .milestone-description {
+    font-size: 0.9rem;
+  }
+
+  .milestone-year {
+    font-size: 0.9rem;
+  }
+
+  .about-us-milestones h3 {
+    font-size: 1.2rem;
+  }
+
+  .leader-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .leader p {
+    font-size: 0.9rem;
+  }
+}
+.leaders-advisors {
+  border: 1px solid #349f89;
+  border-radius: 50px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+}
+.leaders-advisors p {
+  color: red;
+  font-weight: 600;
+}
+.leader-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.banner-name {
+  background-color: #349f89;
+  color: white;
+  padding: 20px 40px; /* Giữ padding lớn trên màn hình lớn */
+  font-weight: bold;
+  font-size: 24px; /* Giữ kích thước font lớn trên màn hình lớn */
+  display: inline-block;
+  transform: skewX(-20deg);
+  padding-top: 20px;
+}
+@media (max-width: 768px) {
+  .body-profile-xs {
+    flex-direction: column; /* Chuyển thành cột cho màn hình nhỏ */
+    gap: 20px; /* Giảm khoảng cách giữa các phần tử */
+  }
+  .profile-item-body {
+    flex-direction: column; /* Chuyển thành cột cho màn hình nhỏ */
+  }
+  .banner-name {
+    font-size: 18px; /* Giảm kích thước font cho màn hình nhỏ */
+    padding: 15px 20px; /* Thay đổi padding cho màn hình nhỏ */
+  }
+  .body-item {
+    margin-top: 20px; /* Giảm khoảng cách trên cho màn hình nhỏ */
+  }
+  .image-header img,
+  .body-profile-xs img {
+    max-width: 100%;
+    height: auto; /* Đảm bảo hình ảnh giữ tỷ lệ khi màn hình nhỏ */
+  }
+}
