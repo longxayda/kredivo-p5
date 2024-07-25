@@ -28,7 +28,7 @@ const ProfilePhamNgocThach = () => {
       </div>
       <div style={{ border: "1px solid #2D947A", marginTop: "20px" }}></div>
       <div className="body-profile-xs">
-        <div>
+        <div className="profile-item-body-2">
           <div className="profile-item-body">
             <div>
               <img src={PNT} alt="hihihihihi" />

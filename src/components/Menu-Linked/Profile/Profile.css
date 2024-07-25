@@ -16,7 +16,7 @@
 /* Thiết lập cho các phần tử trong body */
 .body-item {
   margin-top: 45px;
-  margin-left: 0; /* Loại bỏ margin-left để phù hợp với màn hình nhỏ */
+  margin-left: 120px; /* Loại bỏ margin-left để phù hợp với màn hình nhỏ */
 }
 
 /* Thiết lập cho banner */
@@ -40,7 +40,7 @@
   flex-direction: row;
   justify-content: center; /* Giữ layout hàng cho màn hình lớn */
   margin-left: 0px; /* Loại bỏ margin-left cho màn hình nhỏ */
-  gap: 100px;
+  gap: 20px;
   padding: 20px;
 }
 
@@ -78,4 +78,8 @@
 .image-container img {
   max-width: 100%; /* Đảm bảo hình ảnh không bị tràn ra ngoài */
   height: auto; /* Giữ tỷ lệ của hình ảnh */
+}
+.profile-item-body-2 {
+  border: 1px solid #2d947a;
+  padding: 10px;
 }

@@ -18,7 +18,7 @@ const ProfileDaoTienPhong = () => {
       <div className="image-header">
         <img src={headerprofile} alt="headerprofile" />
       </div>
-      <div className="body-item">
+      <div className="body-item" style={{ marginLeft:"100px" }}>
         <div class="banner-name">
           <div class="banner-content-name">
             GIẢNG VIÊN - LUẬT SƯ
@@ -29,7 +29,7 @@ const ProfileDaoTienPhong = () => {
       </div>
       <div style={{ border: "1px solid #2D947A", marginTop: "20px" }}></div>
       <div className="body-profile-xs">
-        <div>
+        <div className="profile-item-body-2">
           <div className="profile-item-body">
             <div>
               <img src={DaoTienPhong} alt="hihihihihi" />
