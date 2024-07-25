@@ -103,7 +103,7 @@
   font-weight: 600;
 }
 @media (max-width: 1200px) {
-  .leaders-advisors,
+  .leaders-advisors-1,
   .leaders {
     gap: 15px;
   }
@@ -139,7 +139,7 @@
     font-size: 1.3rem;
   }
 
-  .leaders-advisors,
+  .leaders-advisors-1,
   .leaders {
     gap: 10px;
     flex-direction: column;
@@ -179,7 +179,7 @@
     font-size: 0.9rem;
   }
 }
-.leaders-advisors {
+.leaders-advisors-1 {
   border: 1px solid #349f89;
   border-radius: 50px;
   padding-top: 20px;
@@ -187,7 +187,7 @@
   justify-content: space-around;
   gap: 70px;
 }
-.leaders-advisors p {
+.leaders-advisors-1 p {
   color: red;
   font-weight: 600;
 }
