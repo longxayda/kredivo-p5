@@ -56,6 +56,7 @@ const Banner = () => {
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
+              width:'100%',
             }}
           >
             <h1 className="main-title">Power5 Technology</h1>
