@@ -127,9 +127,13 @@
   width: 100%;
 }
 
-.flex-text {
-  /* max-width: 200px;
-  margin-left: 20px; */
+.image-item{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: cover;
 }
 
 .intro-image {
@@ -139,15 +143,6 @@
   border-radius: 8px;
 }
 
-.images-banner {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-  gap: 20px;
-  flex-wrap: wrap;
-}
 
 .images-banner img {
   max-width: 100%;
