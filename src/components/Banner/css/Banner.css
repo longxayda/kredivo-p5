@@ -96,6 +96,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   gap: 20px;
 }
 
@@ -159,7 +160,9 @@
   .images-banner {
     padding: 20px;
   }
-
+  .decription > h3{
+    font-size: 10px;
+  }
   .images-banner img {
     width: 150px;
   }
@@ -182,6 +185,7 @@
     margin-left: 0;
     margin-top: 20px;
   }
+  
 }
 
 .img-activity {
@@ -448,7 +452,9 @@
     align-items: center;
     text-align: center;
   }
-
+  .decription > h3{
+    font-size: 20px;
+  }
   .section-body-conent .sub-description,
   .section-body-conent .section-description {
     max-width: 100%;
@@ -478,7 +484,9 @@ l
     align-items: center;
     gap: 15px;
   }
-
+  .decription h3{
+    font-size: 20px;
+  }
   .section-body-conent img {
     max-width: 100%;
     height: auto;
@@ -517,7 +525,6 @@ l
   .section-body-conent {
     gap: 10px;
   }
-
   .custom-text-banner {
     padding: 10px;
   }

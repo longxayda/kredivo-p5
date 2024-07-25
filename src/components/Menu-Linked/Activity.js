@@ -16,7 +16,7 @@ const Activity = () => {
   };
 
   const scrollToSection = (id) => {
-    document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'center' });
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
     setMenuOpen(false); 
   };
 

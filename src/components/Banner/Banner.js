@@ -20,6 +20,10 @@ import power1 from "../../Image/power5-1.png";
 import power2 from "../../Image/power5-2.png";
 import power3 from "../../Image/power5-3.png";
 
+import logo from "../../Image/Logo.png"
+
+
+
 const Banner = () => {
   const sliderRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(-2); // Start at -2 to have empty left and center
@@ -48,7 +52,7 @@ const Banner = () => {
             display: "flex",
             justifyContent: "center",
             alignContent: "center",
-            paddingTop: "50px",
+            paddingTop: "30px",
           }}
         > 
           <div
@@ -59,7 +63,9 @@ const Banner = () => {
               width:'100%',
             }}
           >
-            <h1 className="main-title">Power5 Technology</h1>
+            <div>
+            <img src={logo} alt="Logo" style={{width:'258px',height:'86px',alignItems:'center'}} />
+            </div>
             <blockquote className="main-quote">
               “Nơi công nghệ kết nối sức mạnh và giá trị nhân văn”
             </blockquote>
@@ -213,7 +219,13 @@ const Banner = () => {
             <img src={power3} alt="power3-aa" />
           </div>
         </div>
-
+        <div  style={{display:'flex',flexDirection:'column',alignItems:'center',paddingTop:'50px'}}>
+          <h3 style={{textAlign: 'center',color: '#2d947a',fontWeight: 'bold', fontSize: '28px'}}>Power5 Technology - Nơi công nghệ kết nối tương lai</h3>
+          <p class="section-description" style={{textAlign: 'center', maxWidth: '1000px'}}>Với đội ngũ nhân viên tài năng, tâm huyết, hệ sinh thái vững mạnh và chiến lược phát triển rõ ràng, Power5 Technology cam kết mang đến những giải pháp công nghệ sáng tạo, hiệu quả, góp phần thúc đẩy sự phát triển của xã hội và nâng cao chất lượng cuộc sống con người.</p>
+        </div>
+        <div style={{display:'flex', justifyContent:'center',textAlign:'center', paddingTop:'50px'}}>
+          <blockquote className="main-quote" style={{maxWidth:'1200px'}}>Hãy cùng Power5 Technology kết nối sức mạnh công nghệ và giá trị nhân văn để kiến tạo tương lai tốt đẹp hơn.</blockquote>
+        </div>
         <div className="team-section">
           <h2 className="section-title">Đội ngũ Power5 Technology</h2>
           <div className="team-slider" ref={sliderRef}>
@@ -227,10 +239,10 @@ const Banner = () => {
               {getImage(2) && <img src={getImage(2)} alt="Team Right" />}
             </div>
           </div>
-          <p className="team-description">
+          {/* <p className="team-description">
             Đội ngũ Power5 Technology Hãy cùng Power5 Technology kết nối công
             nghệ và giá trị nhân văn để kiến tạo tương lai tốt đẹp hơn.
-          </p>
+          </p> */}
         </div>
         <AboutUs />
         <div className="">
