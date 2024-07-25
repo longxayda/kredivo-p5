@@ -88,7 +88,7 @@ const AboutUs = () => {
                 style={{
                   width: "200px",
                   height: "200px",
-                  
+                  border: "1px solid #2D947A",
                   borderRadius: "50%",
                 }}
               >

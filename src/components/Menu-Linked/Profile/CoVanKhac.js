@@ -13,7 +13,7 @@ const CoVanKhac = () => {
           <h3>Ban cố vấn</h3>
         </div>
       </div>
-      <div className="leaders-advisors">
+      <div className="leaders-advisors-1">
         <Link to="/ProfileDaoTienPhong">
           <button
             style={{
