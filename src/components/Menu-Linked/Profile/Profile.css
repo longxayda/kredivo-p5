@@ -16,7 +16,7 @@
 /* Thiết lập cho các phần tử trong body */
 .body-item {
   margin-top: 45px;
-  margin-left: 120px; /* Loại bỏ margin-left để phù hợp với màn hình nhỏ */
+  margin-left: 165px; /* Loại bỏ margin-left để phù hợp với màn hình nhỏ */
 }
 
 /* Thiết lập cho banner */
