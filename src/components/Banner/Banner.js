@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import SliderShow from "./SlideShow";
 import "../Banner/css/Banner.css";
-import congnghe from "../../Image/cong_nghe.png";
-import gioithieu from "../../Image/gioi_thieu.png";
-import hesinhthai from "../../Image/he_sinh_thai.png";
-import trachnhiem from "../../Image/trach_nhiem.png";
-import nanglucketnoi from "../../Image/na_luc_hoat_dong.png";
+import congnghe from "../../Image/cpu.png";
+import gioithieu from "../../Image/user.png";
+import hesinhthai from "../../Image/refresh.png";
+import trachnhiem from "../../Image/link-2.png";
+import nanglucketnoi from "../../Image/profile-circle.png";
 import SlideShowDoiTac from "./SlideShowDoiTac";
 import "../../components/container.css";
 import AboutUs from "../Menu-Linked/AboutUs";
@@ -20,9 +20,7 @@ import power1 from "../../Image/power5-1.png";
 import power2 from "../../Image/power5-2.png";
 import power3 from "../../Image/power5-3.png";
 
-import logo from "../../Image/Logo.png"
-
-
+import logo from "../../Image/Logo.png";
 
 const Banner = () => {
   const sliderRef = useRef(null);
@@ -54,17 +52,21 @@ const Banner = () => {
             alignContent: "center",
             paddingTop: "30px",
           }}
-        > 
+        >
           <div
             style={{
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
-              width:'100%',
+              width: "100%",
             }}
           >
             <div>
-            <img src={logo} alt="Logo" style={{width:'258px',height:'86px',alignItems:'center'}} />
+              <img
+                src={logo}
+                alt="Logo"
+                style={{ width: "258px", height: "86px", alignItems: "center" }}
+              />
             </div>
             <blockquote className="main-quote">
               “Nơi công nghệ kết nối sức mạnh và giá trị nhân văn”
@@ -80,7 +82,7 @@ const Banner = () => {
                   những giá trị nhân văn sâu sắc.
                 </p>
                 <h3 className="section-title">
-                  Công nghệ phục vụ con người và <br/> giữ gìn giá trị nhân văn
+                  Công nghệ phục vụ con người và <br /> giữ gìn giá trị nhân văn
                 </h3>
                 <p className="section-description">
                   Với Power5 Technology, công nghệ không chỉ là những con số và
@@ -146,12 +148,22 @@ const Banner = () => {
         </div>
 
         <div className="flex flex-col items-center space-y-16 p-8">
-          <h3 style={{ textAlign: "center",color: "#2d947a" , fontWeight: "bold", fontSize: "28px"}}>
+          <h3
+            style={{
+              textAlign: "center",
+              color: "#2d947a",
+              fontWeight: "bold",
+              fontSize: "28px",
+            }}
+          >
             Con người, Hệ sinh thái, Công nghệ, Năng lực Kết Nối và Trách nhiệm
             -<br /> Nền tảng cho sự thành công
           </h3>
           <div className="text-center">
-            <p className="section-description" style={{textAlign:'center', maxWidth:'750px'}}>
+            <p
+              className="section-description"
+              style={{ textAlign: "center", maxWidth: "750px" }}
+            >
               Power5 Technology luôn tâm niệm rằng: "chúng tôi không chỉ là công
               nghệ".
               <br />
@@ -162,40 +174,66 @@ const Banner = () => {
           <div className="images-banner">
             <div className="image-item">
               <img
-                style={{ width: "255px", height: "188px" }}
+                style={{ width: "40px", height: "40px" }}
                 src={gioithieu}
                 alt="gioithieu"
               />
+              <div style={{ fontWeight: "bold" }}>Giới thiệu</div>
+              <div>
+                Nguồn lực cốt lõi, là những cá nhân <br /> tài năng, tâm huyết
+                và cống hiến cho <br /> sự phát triển chung
+              </div>
             </div>
             <div className="image-item">
               <img
-                style={{ width: "255px", height: "188px" }}
-                src={congnghe}
+                style={{ width: "40px", height: "40px" }}
+                src={hesinhthai}
                 alt="congnghe"
               />
+              <div style={{ fontWeight: "bold" }}>Hệ sinh thái</div>
+              <div>
+                Mạng lưới đối tác chiến lược, nhà đầu tư <br /> uy tín và cộng
+                đồng khách hàng tin tưởng, <br /> tạo nền tảng vững chắc, vươn
+                xa.
+              </div>
             </div>
             <div className="image-item">
               <img
-                style={{ width: "255px", height: "188px" }}
-                src={hesinhthai}
+                style={{ width: "40px", height: "40px" }}
+                src={congnghe}
                 alt="hesinhthai"
               />
+              <div style={{ fontWeight: "bold" }}>Công nghệ</div>
+              <div>
+                Công cụ đắc lực giúp Power5 hiện thực hóa <br /> ý tưởng, mang
+                đến những giải pháp <br /> sáng tạo và hiệu quả cho khách hàng.
+              </div>
             </div>
           </div>
           <div className="images-banner">
             <div className="image-item">
               <img
-                src={nanglucketnoi}
+                src={trachnhiem}
                 alt="nanglucketnoi"
-                style={{ width: "255px", height: "188px" }}
+                style={{ width: "40px", height: "40px" }}
               />
+              <div style={{ fontWeight: "bold" }}>Năng lực kết nối</div>
+              <div>
+                Nguồn lực cốt lõi, là những cá nhân <br /> tài năng, tâm huyết
+                và cống hiến cho <br /> sự phát triển chung
+              </div>
             </div>
             <div className="image-item">
               <img
-                style={{ width: "255px", height: "188px" }}
-                src={trachnhiem}
+                style={{ width: "40px", height: "40px" }}
+                src={nanglucketnoi}
                 alt="trachnhiem"
               />
+              <div style={{ fontWeight: "bold" }}>Trách nhiệm</div>
+              <div>
+                Nguồn lực cốt lõi, là những cá nhân <br /> tài năng, tâm huyết
+                và cống hiến cho <br /> sự phát triển chung
+              </div>
             </div>
           </div>
         </div>
@@ -219,12 +257,46 @@ const Banner = () => {
             <img src={power3} alt="power3-aa" />
           </div>
         </div>
-        <div  style={{display:'flex',flexDirection:'column',alignItems:'center',paddingTop:'50px'}}>
-          <h3 style={{textAlign: 'center',color: '#2d947a',fontWeight: 'bold', fontSize: '28px'}}>Power5 Technology - Nơi công nghệ kết nối tương lai</h3>
-          <p class="section-description" style={{textAlign: 'center', maxWidth: '1000px'}}>Với đội ngũ nhân viên tài năng, tâm huyết, hệ sinh thái vững mạnh và chiến lược phát triển rõ ràng, Power5 Technology cam kết mang đến những giải pháp công nghệ sáng tạo, hiệu quả, góp phần thúc đẩy sự phát triển của xã hội và nâng cao chất lượng cuộc sống con người.</p>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            paddingTop: "50px",
+          }}
+        >
+          <h3
+            style={{
+              textAlign: "center",
+              color: "#2d947a",
+              fontWeight: "bold",
+              fontSize: "28px",
+            }}
+          >
+            Power5 Technology - Nơi công nghệ kết nối tương lai
+          </h3>
+          <p
+            class="section-description"
+            style={{ textAlign: "center", maxWidth: "1000px" }}
+          >
+            Với đội ngũ nhân viên tài năng, tâm huyết, hệ sinh thái vững mạnh và
+            chiến lược phát triển rõ ràng, Power5 Technology cam kết mang đến
+            những giải pháp công nghệ sáng tạo, hiệu quả, góp phần thúc đẩy sự
+            phát triển của xã hội và nâng cao chất lượng cuộc sống con người.
+          </p>
         </div>
-        <div style={{display:'flex', justifyContent:'center',textAlign:'center', paddingTop:'50px'}}>
-          <blockquote className="main-quote" style={{maxWidth:'1200px'}}>Hãy cùng Power5 Technology kết nối sức mạnh công nghệ và giá trị nhân văn để kiến tạo tương lai tốt đẹp hơn.</blockquote>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            textAlign: "center",
+            paddingTop: "50px",
+          }}
+        >
+          <blockquote className="main-quote" style={{ maxWidth: "1200px" }}>
+            Hãy cùng Power5 Technology kết nối sức mạnh công nghệ và giá trị
+            nhân văn để kiến tạo tương lai tốt đẹp hơn.
+          </blockquote>
         </div>
         <div className="team-section">
           <h2 className="section-title">Đội ngũ Power5 Technology</h2>
@@ -254,7 +326,7 @@ const Banner = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              paddingTop:'50px'
+              paddingTop: "50px",
             }}
           >
             Đối tác của chúng tôi
