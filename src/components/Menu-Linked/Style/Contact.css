@@ -1,29 +1,34 @@
 .contact-main {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  justify-content: space-around;
   padding-top: 100px;
 }
 
 .contact-container {
-  text-align: center;
+  /* text-align: center; */
   flex: 1;
   align-content: center;
 }
-.map-container{
-  flex: 2;  
+.map-container {
+  flex: 1;
+  align-content: center;
+  padding: 0 20px;
+  text-align: center;
 }
 
 .contact-heading {
   font-size: 1.5em;
   margin: 10px 0;
   color: #2d947a;
-  
 }
 
 .contact-info {
   font-size: 1em;
   margin: 5px 0;
+  flex-direction: row;
+
+  display: flex;
 }
 
 .contact-map {
@@ -49,6 +54,10 @@
 
   .contact-map {
     height: 300px;
-    width: 100%; 
+    width: 100%;
   }
+  .contact-info span {
+    font-size: 0.9em; /* Điều chỉnh kích thước chữ của span cho phù hợp */
+    
+  }   
 }
