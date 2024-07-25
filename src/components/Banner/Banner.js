@@ -138,6 +138,10 @@ const Banner = () => {
         </div>
 
         <div className="flex flex-col items-center space-y-16 p-8">
+          <h3 style={{ textAlign: "center",color: "#2d947a" , fontWeight: "bold", fontSize: "28px"}}>
+            Con người, Hệ sinh thái, Công nghệ, Năng lực Kết Nối và Trách nhiệm
+            -<br /> Nền tảng cho sự thành công
+          </h3>
           <div className="text-center">
             <p className="section-description">
               Power5 Technology luôn tâm niệm rằng: "chúng tôi không chỉ là công
