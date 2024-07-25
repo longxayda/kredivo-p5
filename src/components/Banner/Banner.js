@@ -48,8 +48,9 @@ const Banner = () => {
             display: "flex",
             justifyContent: "center",
             alignContent: "center",
+            paddingTop: "50px",
           }}
-        >
+        > 
           <div
             style={{
               display: "flex",
@@ -95,7 +96,7 @@ const Banner = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            paddingTop: "20px",
+            paddingTop: "50px",
           }}
         >
           <h2 className="section-title">
@@ -240,6 +241,7 @@ const Banner = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              paddingTop:'50px'
             }}
           >
             Đối tác của chúng tôi
