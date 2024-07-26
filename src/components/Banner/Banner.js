@@ -219,8 +219,9 @@ const Banner = () => {
               />
               <div style={{ fontWeight: "bold" }}>Năng lực kết nối</div>
               <div>
-                Nguồn lực cốt lõi, là những cá nhân <br /> tài năng, tâm huyết
-                và cống hiến cho <br /> sự phát triển chung
+                Khả năng kết nối con người, ý tưởng,
+                <br /> nguồn lực và công nghệ để tạo ra <br />
+                những giá trị đột phá.
               </div>
             </div>
             <div className="image-item">
@@ -231,18 +232,33 @@ const Banner = () => {
               />
               <div style={{ fontWeight: "bold" }}>Trách nhiệm</div>
               <div>
-                Nguồn lực cốt lõi, là những cá nhân <br /> tài năng, tâm huyết
-                và cống hiến cho <br /> sự phát triển chung
+                Kim chỉ nam cho mọi hoạt động <br />
+                của Power5, đảm bảo sự phát
+                <br /> triển bền vững và đóng góp tích
+                <br /> cực cho cộng đồng.
               </div>
             </div>
           </div>
         </div>
-        <div className="text-center" style={{backgroundColor:'#2D947A',height:'500px', justifyContent:'space-evenly'}}>
+        <div
+          className="text-center"
+          style={{
+            backgroundColor: "#2D947A",
+            height: "500px",
+            justifyContent: "space-evenly",
+          }}
+        >
           <div>
-            <h2 className="section-title" style={{ maxWidth: "400px" , color:'white' ,paddingTop:'30px' }}>
+            <h2
+              className="section-title"
+              style={{ maxWidth: "400px", color: "white", paddingTop: "30px" }}
+            >
               Khởi nguồn từ công nghệ cho giáo dục và vươn đến Blockchain và AI
             </h2>
-            <p className="section-description" style={{maxWidth:'400px', color:'white'}}>
+            <p
+              className="section-description"
+              style={{ maxWidth: "400px", color: "white" }}
+            >
               Hành trình khởi đầu của Power5 Technology trước hết là một công ty
               phát triển công nghệ trong lĩnh vực giáo dục (chuyển đổi số dự án
               an toàn học đường, nền tảng LMS Power5.edu.vn). Với những thành
@@ -252,7 +268,7 @@ const Banner = () => {
             </p>
           </div>
           <div>
-            <img src={power3} style={{borderRadius:'5px'}} alt="power3-aa" />
+            <img src={power3} style={{ borderRadius: "5px" }} alt="power3-aa" />
           </div>
         </div>
         <div
