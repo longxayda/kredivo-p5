@@ -172,7 +172,6 @@
   .images-banner img {
     width: 150px;
   }
-
   .custom-text-banner {
     padding: 20px;
   }
@@ -510,6 +509,7 @@ l
     width: 350px;
   }
   .team-p5{
+    padding-top: 50px;
     font-size: 15px;
   }
   .section-body-conent img {
