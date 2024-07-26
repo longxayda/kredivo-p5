@@ -52,7 +52,7 @@ const AboutUs = () => {
                 alignContent: "center",
                 alignItems: "center",
               }}
-              to={"/ProfileNguyenVanThua"}
+              to={""}
             >
               <div
                 style={{
