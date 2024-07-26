@@ -240,7 +240,7 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className="text-center" style={{backgroundColor:'#2D947A',height:'500px', justifyContent:'space-evenly'}}>
+        <div className="text-center" style={{backgroundColor:'#2D947A',height:'auto', justifyContent:'space-evenly'}}>
           <div>
             <h2
               className="section-title"
@@ -261,7 +261,7 @@ const Banner = () => {
             </p>
           </div>
           <div>
-            <img src={power3} style={{borderRadius:'5px'}} alt="power3-aa" />
+            <img src={power3} style={{borderRadius:'5px'}} className="logop3" alt="power3-aa" />
           </div>
         </div>
         <div
