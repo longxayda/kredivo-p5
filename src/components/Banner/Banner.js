@@ -82,7 +82,7 @@ const Banner = () => {
                   những giá trị nhân văn sâu sắc.
                 </p>
                 <h3 className="section-title">
-                  Công nghệ phục vụ con người và <br /> giữ gìn giá trị nhân văn
+                  Công nghệ phục vụ con người và giữ gìn giá trị nhân văn
                 </h3>
                 <p className="section-description">
                   Với Power5 Technology, công nghệ không chỉ là những con số và
@@ -108,7 +108,7 @@ const Banner = () => {
             paddingTop: "50px",
           }}
         >
-          <h2 className="section-title">
+          <h2 className="section-title1">
             Hành trình khởi đầu từ đam mê và sự kết nối
           </h2>
         </div>
@@ -240,14 +240,7 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div
-          className="text-center"
-          style={{
-            backgroundColor: "#2D947A",
-            height: "500px",
-            justifyContent: "space-evenly",
-          }}
-        >
+        <div className="text-center" style={{backgroundColor:'#2D947A',height:'500px', justifyContent:'space-evenly'}}>
           <div>
             <h2
               className="section-title"
@@ -268,7 +261,7 @@ const Banner = () => {
             </p>
           </div>
           <div>
-            <img src={power3} style={{ borderRadius: "5px" }} alt="power3-aa" />
+            <img src={power3} style={{borderRadius:'5px'}} alt="power3-aa" />
           </div>
         </div>
         <div
@@ -276,8 +269,8 @@ const Banner = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            paddingTop: "50px",
           }}
+          className="team-p5"
         >
           <h3
             style={{
