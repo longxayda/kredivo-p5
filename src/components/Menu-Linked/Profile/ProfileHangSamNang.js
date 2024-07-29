@@ -11,7 +11,7 @@ const ProfileHangSamNang = () => {
         <img src={headerprofile} alt="headerprofile" />
       </div>
 
-      <div className="body-item" style={{ marginLeft:"142px" }}>
+      <div className="body-item" >
         <div class="banner-name">
           <div class="banner-content-name">
             GIẢNG VIÊN - LUẬT SƯ
@@ -54,7 +54,7 @@ const ProfileHangSamNang = () => {
           </div>
         </div>
         <div>
-          <div>
+          <div >
             <img src={image} alt="image-profile" />
           </div>
         </div>
