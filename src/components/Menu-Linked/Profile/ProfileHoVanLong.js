@@ -44,13 +44,12 @@ const ProfileHoVanLong = () => {
             <p style={{ color: "red", fontWeight: "bold", marginTop: "10px" }}>
               Tiểu sử
             </p>
-           <p>Chưa có nội dung</p>
+            <p>Chưa có nội dung</p>
           </div>
         </div>
-        <div>
-          <div>
-            <img src={image} alt="image-profile" />
-          </div>
+
+        <div className="image-profile-right">
+          <img src={image} alt="image-profile" />
         </div>
       </div>
       <CoVanKhac />

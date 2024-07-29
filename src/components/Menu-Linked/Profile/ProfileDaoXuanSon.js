@@ -13,7 +13,7 @@ const ProfileDaoXuanSon = () => {
 
       <div className="body-item" >
         <div class="banner-name">
-          <div class="banner-content-name">
+          <div class="banner-content-name" >
             GIẢNG VIÊN - LUẬT SƯ
             <br />
             ĐÀO XUÂN SƠN
@@ -25,11 +25,13 @@ const ProfileDaoXuanSon = () => {
       <div className="body-profile-xs">
         <div className="profile-item-body-2">
           <div className="profile-item-body">
-            <div style={{ width: "320px", height: "320px", overflow: "content" }}>
+            <div>
               <img src={daoxuanson} alt="hihihihihi" />
             </div>
             <div>
-              <p style={{ color: "red",fontWeight: "bold" }}>Các hoạt động nổi bật</p>
+              <p style={{ color: "red", fontWeight: "bold" }}>
+                Các hoạt động nổi bật
+              </p>
               <p>
                 - Phó Chủ tịch thường trực kiêm Tổng Thư <br />
                 Ký Hiệp hội Nhà Vệ Sinh Việt Nam thuộc Bộ
@@ -40,7 +42,9 @@ const ProfileDaoXuanSon = () => {
             </div>
           </div>
           <div className="profile-item-content">
-            <p style={{ color: "red",fontWeight: "bold",marginTop:"10px" }}>Tiểu sử</p>
+            <p style={{ color: "red", fontWeight: "bold", marginTop: "10px" }}>
+              Tiểu sử
+            </p>
             <p>
               Hơn 20 năm hoạt động và tư vấn trong lĩnh vực tư vấn tài chính,
               đầu tư, bất động sản,
