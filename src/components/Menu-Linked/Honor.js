@@ -4,9 +4,13 @@ import "./Style/Honor.css";
 const Honor = () => {
   return (
     <main className="honor-main">
-      <div className="honor-container">
-        <h3 className="honor-title">Vinh danh các thành viên xuất sắc của dự án An Toàn Học Đường</h3>
-        <p className="honor-subtitle">Tôn vinh những đóng góp đáng quý của các thành viên thiện nguyện.</p>
+      <div className="honor-container" style={{ marginTop: "1rem" }}>
+        <h3 className="honor-title">
+          Vinh danh các thành viên xuất sắc của dự án An Toàn Học Đường
+        </h3>
+        <p className="honor-subtitle">
+          Tôn vinh những đóng góp đáng quý của các thành viên thiện nguyện.
+        </p>
         <div className="honor-content">
           <p>
             Dự án "An Toàn Học Đường" là một sáng kiến nhằm đảm bảo an toàn cho

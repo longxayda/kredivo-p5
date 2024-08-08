@@ -22,7 +22,7 @@ const ProfileDaoTienPhong = () => {
         <div className="body-item">
           <div class="banner-name">
             <div class="banner-content-name">
-              GIẢNG VIÊN - LUẬT SƯ
+              LUẬT SƯ
               <br />
               ĐÀO TIẾN PHONG
             </div>
@@ -104,7 +104,7 @@ const ProfileDaoTienPhong = () => {
             </div>
           </div>
           <div>
-            <div className="image-container" >
+            <div className="image-container">
               <img src={image} alt="image-profile" />
             </div>
           </div>

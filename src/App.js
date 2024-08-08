@@ -14,26 +14,38 @@ import ProfileHangSamNang from "./components/Menu-Linked/Profile/ProfileHangSamN
 import ProfileHoVanLong from "./components/Menu-Linked/Profile/ProfileHoVanLong";
 import ProfileHaHuyHieu from "./components/Menu-Linked/Profile/ProfileHaHuyHieu";
 import ProfileNguyenVanThua from "./components/Menu-Linked/Profile/ProfileNguyenVanThua";
+import ProfilePhamNgocThach from "./components/Menu-Linked/Profile/ProfilePhamNgocThach";
+
 import Activity from "./components/Menu-Linked/Activity";
 const App = () => {
   return (
     <Router>
       <div className="app">
-        <Header/>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="about-us" element={<AboutUs />} />
-            <Route path="/product" element={<Product />} />
-            <Route path="/honor" element={<Honor />} />
-            <Route path="/contact-us" element={<Contact />} />
-            <Route path="/ProfileDaoXuanSon" element={<ProfileDaoXuanSon />} />
-            <Route path="/ProfileDaoTienPhong" element={<ProfileDaoTienPhong />} />
-            <Route path="/ProfileHangSamNang" element={<ProfileHangSamNang />} />
-            <Route path="/ProfileHoVanLong" element={<ProfileHoVanLong />} />
-            <Route path="/ProfileHaHuyHieu" element={<ProfileHaHuyHieu />} />
-            <Route path="/ProfileNguyenVanThua" element={<ProfileNguyenVanThua />} />
-            <Route path="/activity" element={<Activity />} />
-          </Routes>
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="about-us" element={<AboutUs />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/honor" element={<Honor />} />
+          <Route path="/contact-us" element={<Contact />} />
+          <Route path="/ProfileDaoXuanSon" element={<ProfileDaoXuanSon />} />
+          <Route
+            path="/ProfileDaoTienPhong"
+            element={<ProfileDaoTienPhong />}
+          />
+          <Route path="/ProfileHangSamNang" element={<ProfileHangSamNang />} />
+          <Route path="/ProfileHoVanLong" element={<ProfileHoVanLong />} />
+          <Route path="/ProfileHaHuyHieu" element={<ProfileHaHuyHieu />} />
+          <Route
+            path="/ProfileNguyenVanThua"
+            element={<ProfileNguyenVanThua />}
+          />
+          <Route
+            path="/ProfilePhamNgocThach"
+            element={<ProfilePhamNgocThach />}
+          />
+          <Route path="/activity" element={<Activity />} />
+        </Routes>
         <Footer />
       </div>
     </Router>

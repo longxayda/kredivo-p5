@@ -5,16 +5,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./css/SlideShowDoiTac.css"; // Đường dẫn đến tệp CSS tùy chỉnh của bạn
 
-import doitac1 from "../../Image/Logo đối tác/admas.png";
-import doitac2 from "../../Image/Logo đối tác/iny.png";
-import doitac3 from "../../Image/Logo đối tác/jlf.png";
-import doitac4 from "../../Image/Logo đối tác/vta.png";
+// import doitac1 from "../../Image/Logo đối tác/admas.png";
+// import doitac2 from "../../Image/Logo đối tác/iny.png";
+// import doitac3 from "../../Image/Logo đối tác/jlf.png";
+// import doitac4 from "../../Image/Logo đối tác/vta.png";
 
 const logos = [
-  { src: doitac1, alt: "Logo 1" },
-  { src: doitac2, alt: "Logo 2" },
-  { src: doitac3, alt: "Logo 3" },
-  { src: doitac4, alt: "Logo 4" },
+  { src: "doitac/admas.png", alt: "Logo 1" },
+  { src: "doitac/iny.png", alt: "Logo 2" },
+  { src: "doitac/jlf.png", alt: "Logo 3" },
+  { src: "doitac/vta.png", alt: "Logo 4" },
+  { src: "doitac/alfacens.png", alt: "Logo 5" },
   // Thêm các logo khác vào đây
 ];
 
@@ -22,7 +23,7 @@ const SlideShowDoiTac = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 6000,
+    speed: 10000,
     slidesToShow: 4 /* Điều chỉnh số lượng slides hiển thị cùng lúc */,
     slidesToScroll: 1,
     autoplay: true,
@@ -59,7 +60,22 @@ const SlideShowDoiTac = () => {
       <Slider {...settings}>
         {logos.map((logo, index) => (
           <div key={index} className="logo-slide">
-            <img src={logo.src} alt={logo.alt} className="logo-image" style={{ maxWidth: "282px", height: "128px" }} />
+            <img
+              src={logo.src}
+              alt={logo.alt}
+              className="logo-image"
+              style={
+                logo.src === "doitac/alfacens.png"
+                  ? {
+                      border: "solid 1px #2D947A",
+                      padding: "0.75rem",
+                      borderRadius: ".25rem",
+                      maxWidth: "282px",
+                      height: "128px",
+                    }
+                  : { maxWidth: "282px", height: "128px" }
+              }
+            />
           </div>
         ))}
       </Slider>

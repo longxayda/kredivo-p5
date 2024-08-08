@@ -10,12 +10,12 @@ import SlideShowDoiTac from "./SlideShowDoiTac";
 import "../../components/container.css";
 import AboutUs from "../Menu-Linked/AboutUs";
 
-import team1 from "../../Image/Đội ngũ P5/team1.jpg";
-import team2 from "../../Image/Đội ngũ P5/team2.jpg";
-import team3 from "../../Image/Đội ngũ P5/team3.jpg";
-import team4 from "../../Image/Đội ngũ P5/team4.jpg";
-import team5 from "../../Image/Đội ngũ P5/team5.jpg";
-import team6 from "../../Image/Đội ngũ P5/team6.jpg";
+// import team1 from "../../Image/Đội ngũ P5/team1.jpg";
+// import team2 from "../../Image/Đội ngũ P5/team2.jpg";
+// import team3 from "../../Image/Đội ngũ P5/team3.jpg";
+// import team4 from "../../Image/Đội ngũ P5/team4.jpg";
+// import team5 from "../../Image/Đội ngũ P5/team5.jpg";
+// import team6 from "../../Image/Đội ngũ P5/team6.jpg";
 import power1 from "../../Image/power5-1.png";
 import power2 from "../../Image/power5-2.png";
 import power3 from "../../Image/power5-3.png";
@@ -25,7 +25,14 @@ import logo from "../../Image/Logo.png";
 const Banner = () => {
   const sliderRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(-2); // Start at -2 to have empty left and center
-  const teamImages = [team1, team2, team3, team4, team5, team6];
+  const teamImages = [
+    "doingu/team1.jpg",
+    "doingu/team2.jpg",
+    "doingu/team3.jpg",
+    "doingu/team4.jpg",
+    "doingu/team5.jpg",
+    "doingu/team6.jpg",
+  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -61,15 +68,19 @@ const Banner = () => {
               width: "100%",
             }}
           >
-            <div>
+            <div
+              style={{
+                marginBottom: "1rem",
+              }}
+            >
               <img
                 src={logo}
                 alt="Logo"
-                style={{ width: "258px", height: "86px", alignItems: "center" }}
+                style={{ height: "86px", alignItems: "center" }}
               />
             </div>
             <blockquote className="main-quote">
-              “Nơi công nghệ kết nối sức mạnh và giá trị nhân văn”
+              “Nơi kết nối sức mạnh công nghệ và giá trị nhân văn”
             </blockquote>
             <div className="section-body-conent">
               <div>
@@ -240,7 +251,14 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className="text-center" style={{backgroundColor:'#2D947A',height:'auto', justifyContent:'space-evenly'}}>
+        <div
+          className="text-center"
+          style={{
+            backgroundColor: "#2D947A",
+            height: "auto",
+            justifyContent: "space-evenly",
+          }}
+        >
           <div>
             <h2
               className="section-title"
@@ -261,7 +279,12 @@ const Banner = () => {
             </p>
           </div>
           <div>
-            <img src={power3} style={{borderRadius:'5px'}} className="logop3" alt="power3-aa" />
+            <img
+              src={power3}
+              style={{ borderRadius: "5px" }}
+              className="logop3"
+              alt="power3-aa"
+            />
           </div>
         </div>
         <div

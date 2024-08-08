@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import headerprofile from "../../../Image/profile/headerprofile.png";
-import PNT from "../../../Image/profile/PNT.png";
+import PNT from "../../../Image/profile/PhamNgocThach.png";
 import image from "../../../Image/profile/image.png";
+import CoVanKhac from "./CoVanKhac";
 import "./Profile.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
@@ -45,14 +46,13 @@ const ProfilePhamNgocThach = () => {
                 <br />
                 -Đồng trưởng làng công nghệ Blockchain –<br /> Techfest Việt Nam
                 <br />
-                
               </p>
             </div>
           </div>
           {isOpen && (
             <p>
-              Thành viên Hội đồng chuyên gia – Hiệp hội tư vấn tài chính
-              Việt Nam (VFCA)
+              Thành viên Hội đồng chuyên gia – Hiệp hội tư vấn tài chính Việt
+              Nam (VFCA)
               <br /> Cố vấn cấp cao quỹ đầu tư Khởi nghiệp sáng tạo DIF Fund
             </p>
           )}
@@ -105,6 +105,7 @@ const ProfilePhamNgocThach = () => {
           </div>
         </div>
       </div>
+      <CoVanKhac />
     </div>
   );
 };

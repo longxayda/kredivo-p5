@@ -58,7 +58,7 @@ const CoVanKhac = () => {
             <p>TS Hàng Sấm Nang</p>
           </button>
         </Link>
-        <Link>
+        <Link to={"/ProfilePhamNgocThach"}>
           <button
             style={{
               background: "none",
@@ -94,7 +94,6 @@ const CoVanKhac = () => {
               alignContent: "center",
               alignItems: "center",
             }}
-            
           >
             <div
               style={{

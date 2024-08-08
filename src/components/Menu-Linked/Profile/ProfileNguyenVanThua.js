@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import headerprofile from "../../../Image/profile/headerprofile.png";
 import NVT from "../../../Image/profile/NguyenVanThua.png";
 import image from "../../../Image/profile/image.png";
+import CoVanKhac from "./CoVanKhac";
 import "./Profile.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
@@ -38,14 +39,12 @@ const ProfileNguyenVanThua = () => {
                 Các hoạt động nổi bật
               </p>
               <p>
-              -Giám Đốc Điều Hành CÔNG TY TNHH POWER 5 <br/> Nhà đồng sáng lập Công Ty Cổ Phần Công Nghệ Power 5 Technology
-                
+                -Giám Đốc Điều Hành CÔNG TY TNHH POWER 5 <br /> Nhà đồng sáng
+                lập Công Ty Cổ Phần Công Nghệ Power 5 Technology
               </p>
             </div>
           </div>
-          {isOpen && (
-           <p>Chưa nội dung</p>
-          )}
+          {isOpen && <p>Chưa nội dung</p>}
           <div
             style={{
               // border: "1px solid #2D947A",
@@ -69,14 +68,13 @@ const ProfileNguyenVanThua = () => {
               Tiểu sử
             </p>
             <p>
-            -Có hơn 15 năm kinh nghiệm trong lĩnh vực công nghệ. Tôi luôn cố gắng cập nhật những xu hướng công nghệ mới, hướng đến các giải pháp chuyển đổi số nhằm mang lại những giải pháp để công nghệ tối ưu.
+              -Có hơn 15 năm kinh nghiệm trong lĩnh vực công nghệ. Tôi luôn cố
+              gắng cập nhật những xu hướng công nghệ mới, hướng đến các giải
+              pháp chuyển đổi số nhằm mang lại những giải pháp để công nghệ tối
+              ưu.
             </p>
-            <p>
-              - Nhà sáng lập Công Ty TNHH Power 5
-            </p>
-            <p>
-              - Tư vấn các giải pháp về LMS, nRMS, TMS, SAP …
-            </p>
+            <p>- Nhà sáng lập Công Ty TNHH Power 5</p>
+            <p>- Tư vấn các giải pháp về LMS, nRMS, TMS, SAP …</p>
           </div>
         </div>
         <div>
@@ -85,6 +83,7 @@ const ProfileNguyenVanThua = () => {
           </div>
         </div>
       </div>
+      <CoVanKhac />
     </div>
   );
 };
