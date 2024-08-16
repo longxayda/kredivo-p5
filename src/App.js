@@ -15,6 +15,7 @@ import ProfileHoVanLong from "./components/Menu-Linked/Profile/ProfileHoVanLong"
 import ProfileHaHuyHieu from "./components/Menu-Linked/Profile/ProfileHaHuyHieu";
 import ProfileNguyenVanThua from "./components/Menu-Linked/Profile/ProfileNguyenVanThua";
 import ProfilePhamNgocThach from "./components/Menu-Linked/Profile/ProfilePhamNgocThach";
+import ProfileTranTrongPhong from "./components/Menu-Linked/Profile/ProfileTranTrongPhong";
 
 import Activity from "./components/Menu-Linked/Activity";
 const App = () => {
@@ -36,6 +37,11 @@ const App = () => {
           <Route path="/ProfileHangSamNang" element={<ProfileHangSamNang />} />
           <Route path="/ProfileHoVanLong" element={<ProfileHoVanLong />} />
           <Route path="/ProfileHaHuyHieu" element={<ProfileHaHuyHieu />} />
+          <Route
+            path="/ProfileTranTrongPhong"
+            element={<ProfileTranTrongPhong />}
+          />
+
           <Route
             path="/ProfileNguyenVanThua"
             element={<ProfileNguyenVanThua />}

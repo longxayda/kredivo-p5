@@ -1,118 +1,115 @@
-/* Đảm bảo container luôn đầy chiều rộng màn hình */
-.container {
+.profile-container {
   width: 100%;
-  max-width: 1440px;
+  /* max-width: 1200px; */
   margin: 0 auto;
-  padding: 0 20px; /* Thay đổi padding để thích ứng với màn hình nhỏ */
-  box-sizing: border-box;
+  padding: 20px 40px;
+  /* border: red 5px solid; */
 }
 
-/* Thiết lập cho phần header */
-.image-header img {
-  width: 100%; /* Đảm bảo hình ảnh trong header chiếm toàn bộ chiều rộng */
-  height: auto; /* Giữ tỷ lệ của hình ảnh */
+.profile-header {
+  width: 100%;
+  overflow: hidden;
 }
 
-/* Thiết lập cho các phần tử trong body */
-.body-item {
-  margin-top: 45px;
-  margin-left: 0px; /* Loại bỏ margin-left để phù hợp với màn hình nhỏ */
-  padding-left: 150px;
+.profile-header-image {
+  width: 100%;
+  height: auto;
 }
 
-/* Thiết lập cho banner */
-.banner-name {
-  background-color: #349f89;
-  color: white;
-  padding: 20px 40px; /* Giữ padding lớn trên màn hình lớn */
+.profile-body {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.profile-name-banner {
+  text-align: center;
+  background-color: #2D947A;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 24px;
   font-weight: bold;
-  font-size: 24px; /* Giữ kích thước font lớn trên màn hình lớn */
-  display: inline-block;
-  transform: skewX(-20deg);
 }
 
-.banner-content-name {
-  transform: skewX(20deg);
+.divider {
+  border: none;
+  height: 1px;
+  background-color: #2D947A;
+  margin: 20px 0;
 }
-.body-item-123 {
+
+.profile-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.profile-main-info {
+  flex: 2;
   display: flex;
   flex-direction: column;
-
-}
-
-/* Thiết lập cho phần profile */
-.body-profile-xs {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; /* Giữ layout hàng cho màn hình lớn */
-  margin-left: 0px; /* Loại bỏ margin-left cho màn hình nhỏ */
-  gap: 20px;
-  padding: 20px;
-
-}
-
-/* Thiết lập cho profile-item-body */
-.profile-item-body {
-  display: flex;
-  flex-direction: row; /* Giữ layout hàng cho màn hình lớn */
   gap: 20px;
 }
 
-/* Responsive cho màn hình nhỏ */
-@media (max-width: 768px) {
-  .body-profile-xs {
-    flex-direction: column; /* Chuyển thành cột cho màn hình nhỏ */
-    gap: 20px; /* Giảm khoảng cách giữa các phần tử */
+.profile-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #2D947A;
+  align-self: center;
+}
+
+.profile-details {
+  flex-grow: 1;
+}
+
+.highlight-title {
+  color: #2D947A;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.profile-bio {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.profile-sidebar {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sidebar-image {
+  /* width: 100%; */
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-content {
+    flex-direction: column;
   }
-  .profile-item-body {
-    flex-direction: column; /* Chuyển thành cột cho màn hình nhỏ */
+
+  .profile-main-info {
+    text-align: center;
   }
-  .banner-name {
-    font-size: 18px; /* Giảm kích thước font cho màn hình nhỏ */
-    padding: 15px 20px; /* Thay đổi padding cho màn hình nhỏ */
-  
+
+  .profile-image {
+    margin: 0 auto;
   }
-  .body-item {
-    margin-top: 20px; /* Giảm khoảng cách trên cho màn hình nhỏ */
-  
+
+  .profile-sidebar {
+    margin-top: 20px;
+    justify-content: center;
   }
-  .image-header img,
-  .body-profile-xs img {
+
+  .sidebar-image {
     max-width: 100%;
-    height: auto; /* Đảm bảo hình ảnh giữ tỷ lệ khi màn hình nhỏ */
   }
-}
-@media (max-width: 991px) {
-  .body-profile-xs {
-    flex-direction: column; /* Chuyển thành cột cho màn hình nhỏ */
-    gap: 20px; /* Giảm khoảng cách giữa các phần tử */
-  }
-  .profile-item-body {
-    flex-direction: column; /* Chuyển thành cột cho màn hình nhỏ */
-  }
-  .banner-name {
-    font-size: 18px; /* Giảm kích thước font cho màn hình nhỏ */
-    padding: 15px 20px; /* Thay đổi padding cho màn hình nhỏ */
-  }
-  .body-item {
-    margin-top: 20px; /* Giảm khoảng cách trên cho màn hình nhỏ */
-    padding-left: 35px;
-  }
-  .image-header img,
-  .body-profile-xs img {
-    max-width: 100%;
-    height: auto; /* Đảm bảo hình ảnh giữ tỷ lệ khi màn hình nhỏ */
-  }
-}
-
-
-
-/* Thiết lập cho phần hình ảnh trong body-profile-xs */
-.image-container img {
-  max-width: 100%; /* Đảm bảo hình ảnh không bị tràn ra ngoài */
-  height: auto; /* Giữ tỷ lệ của hình ảnh */
-}
-.profile-item-body-2 {
-  border: 1px solid #2d947a;
-  padding: 10px;
 }

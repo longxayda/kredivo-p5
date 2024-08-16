@@ -8,7 +8,7 @@ const ProfileHaHuyHieu = () => {
   return (
     <div className="container">
       <div className="image-header">
-        <img src={headerprofile} alt="headerprofile" />
+        <img src={"bancovan/headerprofile.jpg"} alt="headerprofile" />
       </div>
 
       <div className="body-item">
@@ -26,7 +26,7 @@ const ProfileHaHuyHieu = () => {
         <div className="profile-item-body-2">
           <div className="profile-item-body">
             <div>
-              <img src={HoVanLong} alt="hihihihihi" />
+              <img src={HoVanLong} alt="profile" />
             </div>
             <div>
               <p style={{ color: "red", fontWeight: "bold" }}>
@@ -39,12 +39,12 @@ const ProfileHaHuyHieu = () => {
             <p style={{ color: "red", fontWeight: "bold", marginTop: "10px" }}>
               Tiểu sử
             </p>
-           <p>Chưa có nội dung</p>
+            <p>Chưa có nội dung</p>
           </div>
         </div>
         <div>
           <div>
-            <img src={image} alt="image-profile" />
+            <img src={"bancovan/image.jpg"} alt="image-profile" />
           </div>
         </div>
       </div>

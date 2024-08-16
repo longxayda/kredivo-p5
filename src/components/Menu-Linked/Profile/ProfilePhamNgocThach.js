@@ -16,7 +16,7 @@ const ProfilePhamNgocThach = () => {
   return (
     <div className="container">
       <div className="image-header">
-        <img src={headerprofile} alt="headerprofile" />
+        <img src={"bancovan/headerprofile.jpg"} alt="headerprofile" />
       </div>
       <div className="body-item">
         <div class="banner-name">
@@ -32,7 +32,7 @@ const ProfilePhamNgocThach = () => {
         <div className="profile-item-body-2">
           <div className="profile-item-body">
             <div>
-              <img src={PNT} alt="hihihihihi" />
+              <img src={PNT} alt="profile" />
             </div>
             <div>
               <p style={{ color: "red", fontWeight: "bold" }}>
@@ -101,7 +101,7 @@ const ProfilePhamNgocThach = () => {
         </div>
         <div>
           <div className="image-container">
-            <img src={image} alt="image-profile" />
+            <img src={"bancovan/image.jpg"} alt="image-profile" />
           </div>
         </div>
       </div>

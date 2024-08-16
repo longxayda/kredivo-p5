@@ -10,25 +10,25 @@ import mau5 from "../../Image/Banner/Banner/mẫu 5.png";
 const SliderShow = () => {
   return (
     <div className=" mt-5">
-      <Carousel interval={750} wrap={true}>
+      <Carousel interval={2000} wrap={true}>
         <Carousel.Item>
           <img
             className="d-block w-100 custom-image"
-            src={mau1}
+            src={"/banners/mau4.png"}
             alt="First slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100 custom-image"
-            src={mau4}
+            src={"/banners/mau1.JPG"}
             alt="Second slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100 custom-image"
-            src={mau3}
+            src={"/banners/mau2.JPG"}
             alt="Third slide"
           />
         </Carousel.Item>
@@ -42,7 +42,7 @@ const SliderShow = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 custom-image"
-            src={mau5}
+            src={"/banners/mau3.JPG"}
             alt="Third slide"
           />
         </Carousel.Item>
